@@ -1,0 +1,142 @@
+.text_img {
+  display: flex;
+  height: 600px;
+  @media($tablet2) {
+    height: auto;
+  }
+
+  &.this--reverse {
+    flex-direction: row-reverse;
+  }
+}
+.text_img__left {
+  width: 48%;
+  background: url("../img/main/text_img/text_bg.jpg") center/cover no-repeat;
+  padding-left: calc((100vw - (1720px + 20px)) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+
+  @media (max-width: 1780px) {
+    padding-left: 20px;
+  }
+  @media($tablet2) {
+    width: 100%;
+    align-items: center;
+    padding: 40px 15px;
+  }
+  &.this--mob_pb {
+    @media($tablet2) {
+      padding: 40px 15px 80px;
+    }
+  }
+  .text_img.this--reverse & {
+    padding-left: 100px;
+    padding-right: calc((100vw - (1720px + 20px)) / 2);
+    @media (max-width: 1780px) {
+      padding-right: 20px;
+      padding-left: 80px;
+    }
+    @media($desktopBig) {
+      padding-left: 40px;
+    }
+    @media($tablet2) {
+      padding: 40px 15px;
+    }
+  }
+}
+.text_img__title {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 53px;
+  color: #FDFDFD;
+  @media ($desktop) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  @media($tablet2) {
+    text-align: center;
+  }
+  @media($tablet3) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.text_img__subtitle {
+  font-size: 22px;
+  line-height: 30px;
+  color: #FDFDFD;
+  margin-top: 40px;
+  @media($tablet2) {
+    text-align: center;
+    margin-top: 10px;
+    br {
+      display: none;
+    }
+  }
+  @media ($tablet3) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  &.this--mob_mt_20 {
+    @media($tablet2) {
+      margin-top: 20px;
+    }
+  }
+}
+.text_img__btn {
+  width: 370px;
+  height: 84px;
+  background: #FDFDFD;
+  border-radius: 5px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2E3538;
+  transition: 0.25s;
+
+  &:hover {
+    @media ($tabletMax) {
+      background: #FF7A00;
+      color: #FDFDFD;
+    }
+  }
+
+  @media($tablet2) {
+    margin-top: 20px;
+  }
+  @media($mobileMiddle) {
+    width: 100%;
+  }
+
+  &.this--width_279 {
+    width: 279px;
+    @media($mobileMiddle) {
+      width: 100%;
+    }
+  }
+  &.this--mob_mt_30 {
+    @media($tablet2) {
+      margin-top: 30px;
+    }
+  }
+}
+.text_img__right {
+  width: 52%;
+  @media($tablet2) {
+    display: none;
+  }
+}
+.text_img__img {
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

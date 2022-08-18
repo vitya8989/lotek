@@ -1,0 +1,49 @@
+.input {
+  position: relative;
+}
+.input__label {
+  white-space: nowrap;
+  padding-right: 212px;
+}
+.input__error {
+  color: #D03200;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.req_input.error + .input__error {
+  opacity: 1;
+  visibility: visible;
+}
+.input__input {
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #929DB6;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  transition: 0.3s;
+  font-variant-numeric: lining-nums;
+
+  @media ($tablet3) {
+    font-size: 1.4rem;
+    line-height: 1.79;
+  }
+
+  &::placeholder {
+    color: #CDCDCD;
+  }
+  &:hover {
+    @media ($tabletMax) {
+      border-bottom: 1px solid #4F4F4F;
+    }
+  }
+  &:focus {
+    border-bottom: 1px solid #26160C;
+  }
+}

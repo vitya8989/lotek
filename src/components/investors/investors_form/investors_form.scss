@@ -1,0 +1,125 @@
+.investors_form {
+  background: #FFFFFF;
+  padding: 34px 0;
+  overflow: hidden;
+  @media ($tablet3) {
+    padding: 40px 0;
+  }
+}
+.investors_form__row {
+  display: flex;
+  align-items: center;
+  @media ($desktop) {
+    display: block;
+    position: relative;
+    padding-bottom: 140px;
+  }
+  @media ($tablet3) {
+    padding-bottom: 98px;
+  }
+}
+.investors_form__left {
+  width: calc(40.5% - 120px);
+  margin-right: 120px;
+  @media ($desktopBig) {
+    width: calc(30% - 40px);
+    margin-right: 40px;
+  }
+  @media ($desktop) {
+    width: 279px;
+    height: 318px;
+    padding-top: 0;
+    position: absolute;
+    bottom: -140px;
+  }
+  @media ($tablet3) {
+    bottom: -180px;
+    left: -100px;
+  }
+}
+.investors_form__img {
+  position: relative;
+  padding-top: 114%;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.investors_form__right {
+  width: 59.5%;
+
+  @media ($desktopBig) {
+    width: 70%;
+  }
+  @media ($desktop) {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+}
+.investors_form__form {
+  margin-top: 77px;
+  @media ($desktop) {
+    margin-top: 40px;
+  }
+  @media ($tablet3) {
+    margin-top: 15px;
+  }
+}
+.investors_form__top {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  @media ($desktopBig) {
+    margin-left: -40px;
+  }
+  @media ($tablet3) {
+    margin-left: 0;
+  }
+}
+.investors_form__input_wr {
+  margin-left: 60px;
+  width: calc(50% - 60px);
+  margin-bottom: 40px;
+  @media ($desktopBig) {
+    margin-left: 40px;
+    width: calc(50% - 40px);
+  }
+  @media ($tablet3) {
+    margin-bottom: 20px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.investors_form__bottom {
+  display: flex;
+  align-items: center;
+  @media ($desktop) {
+   flex-direction: column-reverse;
+  }
+}
+.investors_form__submit {
+  margin-right: 30px;
+  @media ($desktop) {
+    margin-right: 0;
+    margin-top: 30px;
+  }
+  @media ($tablet3) {
+    margin-top: 20px;
+    width: 202px;
+  }
+}
+.investors_form__agreement {
+  color: #828282;
+  @media ($desktop) {
+    text-align: center;
+  }
+  @media ($tablet3) {
+    margin-top: -10px;
+  }
+}

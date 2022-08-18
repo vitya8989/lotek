@@ -1,0 +1,95 @@
+@import "null";
+@import "variables";
+
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import "fonts";
+html {
+	font-size: 10px;
+}
+body {
+	font-size: 1.6rem;
+	line-height: 1.5;
+	font-family: Raleway, sans-serif;
+	font-weight: 400;
+	color: #26160C;
+
+	&.scroll-lock {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1560px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+	@media($tablet) {
+		padding: 0 15px;
+	}
+}
+.section {
+	padding: 80px 0;
+	&.this--top {
+		padding: 80px 0 0 0;
+		@media ($tablet) {
+			padding: 40px 0 0 0;
+		}
+	}
+	&.this--bottom {
+		padding: 0 0 80px 0;
+		@media ($tablet) {
+			padding: 0 0 40px 0;
+		}
+	}
+
+	@media ($tablet) {
+		padding: 40px 0;
+	}
+}
+.main {
+	flex: 1 0 auto;
+	padding-top: 147px;
+
+	@media ($tablet) {
+		padding-top: 75px;
+	}
+}
+
+@import "./blocks/title";
+@import "./blocks/btn";
+@import "./blocks/img_text";
+@import "./blocks/line";
+@import "./blocks/document";
+@import "./blocks/input";
+
+@import "../components/header/header";
+@import "../components/footer/footer";
+
+@import "../components/main/main_top/main_top";
+@import "../components/main/main_activities/main_activities";
+@import "../components/main/main_map/main_map";
+@import "../components/main/main_press/main_press";
+@import "../components/main/main_about/main_about";
+
+@import "../components/investors/investors_top/investors_top";
+@import "../components/investors/emission/emission";
+@import "../components/investors/documents/documents";
+@import "../components/investors/investors_form/investors_form";
+@import "../components/investors/contacts/contacts";
+
+
+
