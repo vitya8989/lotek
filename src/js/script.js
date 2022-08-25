@@ -30,6 +30,8 @@
 
 @@include('../components/lk/giving/giving.js');
 
+@@include('../components/lk/history/history.js');
+
 const onlyRus = document.querySelectorAll('.only-rus');
 const maskPhone = document.querySelectorAll('.phone-mask');
 const onlyEng = document.querySelectorAll('.only-eng');
@@ -100,7 +102,7 @@ if (onlyEng.length > 0) {
 if (onlyNumber.length > 0) {
     for (let i = 0; i < onlyNumber.length; i++) {
         onlyNumber[i].addEventListener('keyup', function () {
-            this.value = this.value.replace(/[^\d]/g, "");
+            this.value = this.value.replace(/[^\d.,]/g, "");
         });
     }
 }

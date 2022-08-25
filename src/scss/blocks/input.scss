@@ -2,10 +2,9 @@
   position: relative;
 
   &.this--textarea {
-    width: 100%;
-
     textarea {
       resize: none;
+      width: 100%;
     }
   }
   .SumoSelect {

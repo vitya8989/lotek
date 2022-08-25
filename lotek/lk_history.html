@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Регистрация Юр.лица</title>
+    <title>История показаний</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link href="css/sumoselect.min.css" rel="stylesheet">
@@ -251,140 +251,377 @@
     </div>
 </header>
     <main class="main">
-        <section class="registration">
+        <section class="lk">
     <div class="container">
-        <div class="registration__content">
-            <div class="registration__breadcrumbs breadcrumbs">
-                <div class="breadcrumbs_wr">
-                    <a href="/" class="breadcrumb this--link">Главная
-                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L5 5L1 9" stroke="#26160C" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    <div class="breadcrumb">Регистрация</div>
+        <div class="lk__content">
+            <span class="lk__mob_menu_btn"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15.9999" cy="10.2065" r="7.05792" stroke="#FFFFFF" stroke-width="3"/>
+                        <path d="M4.96456 28.3281C5.22975 23.4434 9.89034 19.2625 16 19.2625C22.1097 19.2625 26.7703 23.4434 27.0355 28.3281H4.96456Z" stroke="#FFFFFF" stroke-width="3"/>
+                    </svg></span>
+            <div class="lk__menu">
+                <span class="lk__menu_cross"></span>
+                <div class="lk__menu_title">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15.9999" cy="10.2065" r="7.05792" stroke="#4F4F4F" stroke-width="3"/>
+                        <path d="M4.96456 28.3281C5.22975 23.4434 9.89034 19.2625 16 19.2625C22.1097 19.2625 26.7703 23.4434 27.0355 28.3281H4.96456Z" stroke="#4F4F4F" stroke-width="3"/>
+                    </svg>
+                    Личный кабинет
+                </div>
+                <div class="lk__menu_line line"></div>
+                <ul class="lk__menu_items">
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link">Подача показаний</a></li>
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link">Заявки</a></li>
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link active">История показаний</a></li>
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link">Документы</a></li>
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link">Мои данные</a></li>
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link">Мои реквизиты</a></li>
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link">Помощь</a></li>
+                </ul>
+                <div class="lk__menu_line line"></div>
+                <a href="#" class="lk__menu_exit">Выйти из личного кабинета</a>
+            </div>
+            <div class="lk__body">
+                <div class="history">
+                    <h1 class="lk__title">История показаний</h1>
+                    <div class="history__filter_items">
+                        <div class="history__filter_item input">
+                            <div class="input__label">Адрес</div>
+                            <select name="select" class="select" placeholder="Не выбрано">
+                                <option disabled selected value="">
+                                <option value="Санкт-Петербург, ул. Пушкинская, д. 56, офис 5">Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</option>
+                                <option value="Санкт-Петербург, ул. Пушкинская, д. 56, офис 5">Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</option>
+                                <option value="Санкт-Петербург, ул. Пушкинская, д. 56, офис 5">Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</option>
+                            </select>
+                        </div>
+                        <div class="history__filter_item this--mw_320 input">
+                            <div class="input__label">Услуга</div>
+                            <select name="select" class="select" placeholder="Не выбрано">
+                                <option disabled selected value="">
+                                <option value="Водоснабжение">Водоснабжение</option>
+                                <option value="Водоотведение">Водоотведение</option>
+                                <option value="Отопление">Отопление</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="history__table_wr">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Дата подачи</th>
+                                <th>Услуга</th>
+                                <th>Название объекта</th>
+                                <th>Адрес объекта</th>
+                                <th>Статус</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Водоснабжение</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__water_in this--process">
+                                        <span>В обработке</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Водоснабжение</td>
+                                <td>Название объекта длинное в две строки с дополнительной информацией</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__water_in this--done">
+                                    <span>Выполнено</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Водоотведение</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__water_out this--done">
+                                    <span>Выполнено</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Отопление</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5 дополнительная строка</td>
+                                <td>
+                                    <div class="history__table_row history__warm this--done">
+                                    <span>Выполнено</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Отопление</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__warm this--done">
+                                    <span>Выполнено</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Отопление</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__warm this--done">
+                                    <span>Выполнено</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Отопление</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__warm this--done">
+                                    <span>Выполнено</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Отопление</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__warm this--process">
+                                    <span>В обработке</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Отопление</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__warm this--process">
+                                    <span>В обработке</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Отопление</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__warm this--process">
+                                    <span>В обработке</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Отопление</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__warm this--process"><span>В обработке</span><span class="history__arrow"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Отопление</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__warm this--process">
+                                        <span>В обработке</span><span class="history__arrow"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Отопление</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__warm this--process">
+                                    <span>В обработке</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Отопление</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__warm this--process">
+                                    <span>В обработке</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            <tr>
+                                <td>12.02.2022</td>
+                                <td>Отопление</td>
+                                <td>Название объекта</td>
+                                <td>Санкт-Петербург, ул. Пушкинская, д. 56, офис 5</td>
+                                <td>
+                                    <div class="history__table_row history__warm this--process">
+                                    <span>В обработке</span><span class="history__arrow"></span>
+                                    </div></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ul class="history__pagination pagination">
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__arrow pagination__prev this--disabled"></a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link active">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            ...
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link">9</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__arrow pagination__next"></a>
+                        </li>
+                    </ul>
+                    <div class="history__popup">
+                        <div class="history__popup_body">
+                            <span class="history__popup_cross"></span>
+                            <div class="history__water_in_content history__popup_body_content">
+                                <div class="history__popup_status">
+                                    <div class="history__popup_status_process">В обработке</div>
+                                    <div class="history__popup_status_done">Выполнено</div>
+                                </div>
+                                <h2 class="history__popup_title">Водоснабжение</h2>
+                                <div class="history__popup_top_items">
+                                    <div class="history__popup_top_item">
+                                        <div class="history__popup_top_item_top">Дата подачи</div>
+                                        <div class="history__popup_top_item_bottom">22.12.2021</div>
+                                    </div>
+                                    <div class="history__popup_top_item">
+                                        <div class="history__popup_top_item_top">Название объекта</div>
+                                        <div class="history__popup_top_item_bottom">БЦ «СПБ»</div>
+                                    </div>
+                                    <div class="history__popup_top_item">
+                                        <div class="history__popup_top_item_top">Адрес</div>
+                                        <div class="history__popup_top_item_bottom">Санкт-Петербург, ул. Пушкинская, д. 56, офис 5 дополнительная строка</div>
+                                    </div>
+                                </div>
+                                <div class="history__popup_bottom_items">
+                                    <div class="history__popup_bottom_item">
+                                        <div class="history__popup_bottom_item__title">Горячее</div>
+                                        <div class="history__popup_bottom_item_items">
+                                            <div class="history__popup_bottom_item_item">
+                                                <div class="history__popup_bottom_item_item_top">Счетчик №1168576</div>
+                                                <div class="history__popup_bottom_item_item_bottom">33,123</div>
+                                            </div>
+                                            <div class="history__popup_bottom_item_item">
+                                                <div class="history__popup_bottom_item_item_top">Счетчик №5768576</div>
+                                                <div class="history__popup_bottom_item_item_bottom">33,123</div>
+                                            </div>
+                                            <div class="history__popup_bottom_item_item">
+                                                <div class="history__popup_bottom_item_item_top">Счетчик №2368576</div>
+                                                <div class="history__popup_bottom_item_item_bottom">33,123</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="history__popup_bottom_item">
+                                        <div class="history__popup_bottom_item__title">Холодное</div>
+                                        <div class="history__popup_bottom_item_items">
+                                            <div class="history__popup_bottom_item_item">
+                                                <div class="history__popup_bottom_item_item_top">Счетчик №1168576</div>
+                                                <div class="history__popup_bottom_item_item_bottom">33,123</div>
+                                            </div>
+                                            <div class="history__popup_bottom_item_item">
+                                                <div class="history__popup_bottom_item_item_top">Счетчик №5768576</div>
+                                                <div class="history__popup_bottom_item_item_bottom">33,123</div>
+                                            </div>
+                                            <div class="history__popup_bottom_item_item">
+                                                <div class="history__popup_bottom_item_item_top">Счетчик №2368576</div>
+                                                <div class="history__popup_bottom_item_item_bottom">33,123</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="history__water_out_content history__popup_body_content">
+                                <div class="history__popup_status">
+                                    <div class="history__popup_status_process">В обработке</div>
+                                    <div class="history__popup_status_done">Выполнено</div>
+                                </div>
+                                <h2 class="history__popup_title">Водоотведение</h2>
+                                <div class="history__popup_top_items">
+                                    <div class="history__popup_top_item">
+                                        <div class="history__popup_top_item_top">Дата подачи</div>
+                                        <div class="history__popup_top_item_bottom">22.12.2021</div>
+                                    </div>
+                                    <div class="history__popup_top_item">
+                                        <div class="history__popup_top_item_top">Название объекта</div>
+                                        <div class="history__popup_top_item_bottom">БЦ «СПБ»</div>
+                                    </div>
+                                    <div class="history__popup_top_item">
+                                        <div class="history__popup_top_item_top">Адрес</div>
+                                        <div class="history__popup_top_item_bottom">Санкт-Петербург, ул. Пушкинская, д. 56, офис 5 дополнительная строка</div>
+                                    </div>
+                                </div>
+                                <div class="history__popup_bottom_item_item">
+                                    <div class="history__popup_bottom_item_item_top">Счетчик №1168576</div>
+                                    <div class="history__popup_bottom_item_item_bottom">33,123</div>
+                                </div>
+                                <div class="history__popup_bottom_item_item">
+                                    <div class="history__popup_bottom_item_item_top">Счетчик №5768576</div>
+                                    <div class="history__popup_bottom_item_item_bottom">33,123</div>
+                                </div>
+                                <div class="history__popup_bottom_item_item">
+                                    <div class="history__popup_bottom_item_item_top">Счетчик №2368576</div>
+                                    <div class="history__popup_bottom_item_item_bottom">33,123</div>
+                                </div>
+                            </div>
+                            <div class="history__warm_content history__popup_body_content">
+                                <div class="history__popup_status">
+                                    <div class="history__popup_status_process">В обработке</div>
+                                    <div class="history__popup_status_done">Выполнено</div>
+                                </div>
+                                <h2 class="history__popup_title">Отопление</h2>
+                                <div class="history__popup_top_items">
+                                    <div class="history__popup_top_item">
+                                        <div class="history__popup_top_item_top">Дата подачи</div>
+                                        <div class="history__popup_top_item_bottom">22.12.2021</div>
+                                    </div>
+                                    <div class="history__popup_top_item">
+                                        <div class="history__popup_top_item_top">Название объекта</div>
+                                        <div class="history__popup_top_item_bottom">БЦ «СПБ»</div>
+                                    </div>
+                                    <div class="history__popup_top_item">
+                                        <div class="history__popup_top_item_top">Адрес</div>
+                                        <div class="history__popup_top_item_bottom">Санкт-Петербург, ул. Пушкинская, д. 56, офис 5 дополнительная строка</div>
+                                    </div>
+                                </div>
+                                <div class="history__popup_bottom_item_item">
+                                    <div class="history__popup_bottom_item_item_top">Счетчик №1168576</div>
+                                    <div class="history__popup_bottom_item_item_bottom">33,123</div>
+                                </div>
+                                <div class="history__popup_bottom_item_item">
+                                    <div class="history__popup_bottom_item_item_top">Счетчик №5768576</div>
+                                    <div class="history__popup_bottom_item_item_bottom">33,123</div>
+                                </div>
+                                <div class="history__popup_bottom_item_item">
+                                    <div class="history__popup_bottom_item_item_top">Счетчик №2368576</div>
+                                    <div class="history__popup_bottom_item_item_bottom">33,123</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h1 class="registration__title">Регистрация</h1>
-            <div class="registration__filter filter">
-                <a href="#" class="filter_item active">Юр. лицо</a>
-                <a href="#" class="filter_item">ИП</a>
-                <a href="#" class="filter_item">Физ. лицо</a>
-            </div>
-            <form class="registration__form registration__form_company" name="registration_form" action="#">
-                <div class="registration__form_block">
-                    <h2 class="registration__form_title">Реквизиты</h2>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">Тип юридического лица*</div>
-                        <select name="select" class="select" placeholder="Не выбрано">
-                            <option disabled selected value="">
-                            <option value="ООО">ООО</option>
-                            <option value="ОАО">ОАО</option>
-                            <option value="ЗАО">ЗАО</option>
-                        </select>
-                    </div>
-                    <div class="registration__form__input_wr input this--textarea">
-                        <div class="input__label">Название юридического лица*</div>
-                        <textarea class="input__input" name="input" placeholder="Полное наименование"></textarea>
-                    </div>
-                    <div class="registration__form__input_wr input this--textarea">
-                        <div class="input__label">Юридический адрес*</div>
-                        <textarea class="input__input" name="input" placeholder="Введите адрес"></textarea>
-                    </div>
-                    <div class="registration__form__input_wr input this--textarea">
-                        <div class="input__label">Почтовый адрес*</div>
-                        <textarea class="input__input" name="input" placeholder="Введите адрес"></textarea>
-                    </div>
-                    <div class="registration__form__input_wr input this--textarea">
-                        <div class="input__label">Номер записи в ЕГРЮЛ*</div>
-                        <textarea class="input__input" name="input" placeholder="Введите номер"></textarea>
-                    </div>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">ОГРН*</div>
-                        <input type="text" class="input__input" name="organization" placeholder="_____________">
-                    </div>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">ИНН*</div>
-                        <input type="text" class="input__input" name="organization" placeholder="__________">
-                    </div>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">КПП*</div>
-                        <input type="text" class="input__input" name="organization" placeholder="_________">
-                    </div>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">ОКПО*</div>
-                        <input type="text" class="input__input" name="organization" placeholder="________">
-                    </div>
-                </div>
-                <div class="registration__form_block">
-                    <h2 class="registration__form_title">Контакты руководителя</h2>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">ФИО руководителя*</div>
-                        <input type="text" class="input__input only-rus req_input" name="name"
-                               placeholder="Введите ФИО">
-                        <div class="input__error">Введите корректное значение</div>
-                    </div>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">E-mail (ваш будущий логин)*</div>
-                        <input type="text" class="input__input only-eng req_input" name="mail"
-                               placeholder="example@mail.ru">
-                        <div class="input__error">Введите корректное значение</div>
-                    </div>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">Телефон*</div>
-                        <input type="text" class="input__input phone-mask req_input" name="tel"
-                               value="+_(___)___-__-__">
-                        <div class="input__error">Введите корректное значение</div>
-                    </div>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">Факс</div>
-                        <input type="text" class="input__input phone-mask" name="tel2" value="+_(___)___-__-__">
-                    </div>
-                </div>
-                <div class="registration__form_block">
-                    <div class="registration__form_checkbox checkbox">
-                        <input type="checkbox" name="checkbox_1" id="checkbox_1" class="checkbox__checkbox">
-                        <label class="checkbox__label" for="checkbox_1"><span>
-                            <svg width="24" height="15"
-                                                                                   viewBox="0 0 24 15" fill="none"
-                                                                                   xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 4.5L10 13.5L22.5 1" stroke="#F8F8F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                            </span>Имеется представитель</label>
-                    </div>
-                    <h2 class="registration__form_title">Контакты представителя</h2>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">ФИО представителя</div>
-                        <input type="text" class="input__input only-rus" name="name" placeholder="Введите ФИО">
-                    </div>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">E-mail</div>
-                        <input type="text" class="input__input only-eng" name="mail" placeholder="example@mail.ru">
-                    </div>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">Телефон</div>
-                        <input type="text" class="input__input phone-mask" name="tel" value="+_(___)___-__-__">
-                    </div>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">Факс</div>
-                        <input type="text" class="input__input phone-mask" name="tel2" value="+_(___)___-__-__">
-                    </div>
-                </div>
-                <div class="registration__form_block">
-                    <h2 class="registration__form_title">Пароль</h2>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">Придумайте пароль*</div>
-                        <input type="password" class="input__input only-eng req_input" name="pass1">
-                        <div class="input__error">Введите корректное значение</div>
-                    </div>
-                    <div class="registration__form__input_wr input">
-                        <div class="input__label">Повторите пароль*</div>
-                        <input type="password" class="input__input only-eng req_input" name="pass2">
-                        <div class="input__error">Введите корректное значение</div>
-                    </div>
-                </div>
-                <div class="registration__form_agree">Нажимая кнопку «Зарегистрироваться», вы соглашаетесь с Правилами сайта и Политикой конфиденциальности</div>
-                <input type="submit" class="registration__form_submit btn" value="Зарегистрироваться">
-            </form>
         </div>
     </div>
 </section>

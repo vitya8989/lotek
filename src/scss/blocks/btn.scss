@@ -47,4 +47,10 @@
       background: #D03200;
     }
   }
+  &.this--disabled {
+    pointer-events: none;
+    color: #4F4F4F!important;
+    background: #E1E1E1;
+    border: 1px solid #E1E1E1;
+  }
 }
