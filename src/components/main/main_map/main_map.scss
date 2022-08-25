@@ -1,7 +1,3 @@
-.main_map {
-  background: #F8F8F8;
-}
-
 .main_map__group {
   margin-top: 10px;
   position: relative;
@@ -161,7 +157,13 @@
   cursor: pointer;
   transition: 0.3s;
 
+  &:hover {
+    @media ($tabletMax) {
+      fill: #FFA878;
+    }
+  }
   &.active {
    fill: #FF5F2D;
+    pointer-events: none;
   }
 }

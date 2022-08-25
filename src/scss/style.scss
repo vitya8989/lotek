@@ -21,6 +21,7 @@ body {
 	font-family: Raleway, sans-serif;
 	font-weight: 400;
 	color: #26160C;
+	font-variant-numeric: lining-nums;
 
 	&.scroll-lock {
 		overflow: hidden;
@@ -63,6 +64,7 @@ body {
 .main {
 	flex: 1 0 auto;
 	padding-top: 147px;
+	background: #F8F8F8;
 
 	@media ($tablet) {
 		padding-top: 75px;
@@ -75,6 +77,14 @@ body {
 @import "./blocks/line";
 @import "./blocks/document";
 @import "./blocks/input";
+@import "./blocks/breadcrumbs";
+@import "./blocks/default_slider";
+@import "./blocks/pagination";
+@import "./blocks/popup";
+@import "./blocks/table";
+@import "./blocks/registration_pages";
+@import "./blocks/filter";
+@import "./blocks/lk";
 
 @import "../components/header/header";
 @import "../components/footer/footer";
@@ -90,6 +100,41 @@ body {
 @import "../components/investors/documents/documents";
 @import "../components/investors/investors_form/investors_form";
 @import "../components/investors/contacts/contacts";
+
+@import "../components/services/services";
+
+@import "../components/press/press";
+
+@import "../components/press_card/press_card";
+
+@import "../components/services_card/services_card_top/services_card_top";
+@import "../components/services_card/services_card_slider/services_card_slider";
+@import "../components/services_card/work_steps/work_steps";
+@import "../components/services_card/projects/projects";
+@import "../components/services_card/services_card_form/services_card_form";
+@import "../components/services_card/partners/partners";
+
+@import "../components/management/management";
+
+@import "../components/tariffs/tariffs";
+
+@import "../components/licenses/licenses";
+
+@import "../components/map/map";
+
+@import "../components/schedule/schedule";
+
+@import "../components/page_404/page_404";
+
+@import "../components/contacts/contacts";
+
+@import "../components/search_result/search_result";
+
+@import "../components/default/default";
+
+@import "../components/lk/giving/giving";
+
+
 
 
 

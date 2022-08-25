@@ -1,0 +1,114 @@
+h1.giving__title {
+  text-align: left;
+}
+.giving__new_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: 30px;
+}
+.giving__button {
+  margin-left: 10px;
+  background: #FFFFFF;
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  transition: 0.3s;
+
+  @media ($tablet3) {
+    font-size: 1.4rem;
+    line-height: 1.79;
+  }
+
+  &:hover {
+    @media ($tabletMax) {
+      background: #929DB6;
+      color: #FFFFFF;
+      border: 1px solid #929DB6;
+      svg {
+        path {
+          stroke: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  &.this--new_button {
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    color: #4F4F4F;
+
+    @media ($mobileMiddle) {
+      width: 100%;
+      justify-content: space-between;
+    }
+    svg {
+      margin-left: 10px;
+      path {
+        transition: 0.3s;
+      }
+    }
+  }
+  &.this--card_button {
+    padding: 10px 15px;
+  }
+}
+.giving__cards {
+  margin-top: 30px;
+  margin-left: -20px;
+  margin-bottom: -20px;
+  display: flex;
+  flex-wrap: wrap;
+  @media ($tablet3) {
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+  }
+  @media ($mobile) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.giving__card {
+  width: calc(33.333% - 20px);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  padding: 20px;
+
+  @media ($desktopBig) {
+    width: calc(50% - 20px);
+  }
+  @media ($tablet3) {
+    width: calc(50% - 10px);
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  @media ($mobile) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.giving__card_title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #000000;
+}
+.giving__card_address {
+  color: #4F4F4F;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+.giving__card_buttons {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-bottom: -10px;
+}

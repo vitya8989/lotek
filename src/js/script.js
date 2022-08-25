@@ -8,6 +8,28 @@
 @@include('../components/investors/investors_form/investors_form.js');
 @@include('../components/investors/contacts/contacts.js');
 
+@@include('../components/services_card/services_card_top/services_card_top.js');
+@@include('../components/services_card/services_card_slider/services_card_slider.js');
+@@include('../components/services_card/projects/projects.js');
+@@include('../components/services_card/services_card_form/services_card_form.js');
+@@include('../components/services_card/partners/partners.js');
+
+@@include('../components/licenses/licenses.js');
+
+@@include('../components/schedule/schedule.js');
+
+@@include('../components/contacts/contacts.js');
+
+@@include('../components/default/default.js');
+
+@@include('../components/registration_company/registration_company.js');
+
+@@include('../components/registration_ip/registration_ip.js');
+
+@@include('../components/registration_fiz/registration_fiz.js');
+
+@@include('../components/lk/giving/giving.js');
+
 const onlyRus = document.querySelectorAll('.only-rus');
 const maskPhone = document.querySelectorAll('.phone-mask');
 const onlyEng = document.querySelectorAll('.only-eng');

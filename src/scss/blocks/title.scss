@@ -12,10 +12,23 @@ h2 {
   font-weight: 700;
   font-size: 4rem;
   line-height: 1.38;
-  color: #D03200;
 
   @media ($tablet3) {
     font-size: 2.4rem;
     line-height: 1.25;
+  }
+
+  &.this--red {
+    color: #D03200;
+  }
+}
+h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5;
+  @media ($tablet3) {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.56;
   }
 }

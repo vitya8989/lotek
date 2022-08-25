@@ -1,0 +1,144 @@
+.schedule {
+  position: relative;
+  padding: 90px 0 100px;
+  @media ($tablet3) {
+    padding: 44px 0 30px;
+  }
+}
+.schedule__row {
+  margin-top: 47px;
+  display: flex;
+  @media ($tablet3) {
+    display: block;
+    margin-top: 15px;
+  }
+}
+.schedule__left {
+  width: calc(74.3% - 20px);
+  margin-right: 20px;
+  @media ($tablet3) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.schedule__search-form {
+  position: relative;
+
+  &.this--mt {
+    margin-top: 47px;
+
+    @media ($tablet3) {
+      margin-top: 15px;
+    }
+  }
+}
+.schedule__search-form_input {
+  height: 100px;
+  background: #FFFFFF;
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0 160px 0 30px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #26160C;
+
+  @media ($tablet3) {
+    height: 80px;
+    padding: 0 120px 0 20px;
+  }
+  &::placeholder {
+    color: #929DB6;
+  }
+}
+.schedule__search-form_submit {
+  position: absolute;
+  top: 34px;
+  right: 34px;
+  @media ($tablet) {
+    top: 24px;
+    right: 24px;
+  }
+}
+.schedule__search-form_cross {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 92px;
+  top: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  @media ($tablet3) {
+    right: 68px;
+    top: 14px;
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 3px;
+    background: #929DB6;
+    top: 24px;
+    left: 5px;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+.schedule__right {
+  width: 25.7%;
+  @media ($desktopBig) {
+    width: 350px;
+    flex: 0 0 auto;
+  }
+  @media ($tablet3) {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.schedule__document {
+  min-height: 100px;
+  padding: 18px 20px 13px;
+  @media ($tablet3) {
+    min-height: 100px;
+  }
+  .document__row {
+    &:last-child {
+      margin-top: 0;
+      @media ($tablet3) {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+.schedule__table_wr {
+  margin: 40px auto 0;
+  max-width: 1560px;
+  padding: 0 20px;
+
+  @media ($tablet) {
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 0 15px;
+  }
+  @media ($tablet3) {
+    margin: 20px auto 0;
+  }
+}
+.schedule__pagination {
+  margin-top: 81px;
+  @media ($tablet) {
+    margin-top: 40px;
+  }
+}

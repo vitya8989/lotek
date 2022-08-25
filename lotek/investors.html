@@ -198,17 +198,76 @@
             </form>
         </div>
     </div>
+    <div class="personal_popup">
+        <div class="personal_popup__body">
+            <div class="personal_popup__cross"></div>
+            <div class="personal_popup__img_wr">
+                <div class="personal_popup__img">
+                    <img src="./img/header/popup_img.png" alt="">
+                </div>
+            </div>
+            <div class="personal_popup__content autorization active" data-name="autorization">
+                <h2 class="autorization__title">Авторизация</h2>
+                <form class="autorization__form" action="#" name="autorization_form">
+                    <div class="autorization__form_input_wr input">
+                        <div class="input__label">E-mail</div>
+                        <input type="text" class="input__input only-eng req_input" name="email" placeholder="example@mail.ru">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <div class="autorization__form_input_wr input">
+                        <div class="input__label">Пароль</div>
+                        <input type="password" class="input__input only-eng req_input" name="password" placeholder="Введите пароль">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <a href="#" class="autorization__forgot">Я забыл(а) пароль</a>
+                    <input type="submit" class="autorization__form_submit btn" value="Войти">
+                </form>
+                <a href="#" class="autorization__registration_link">Регистрация <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L1 13" stroke="#26160C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </a>
+            </div>
+            <div class="personal_popup__content forgot" data-name="forgot">
+                <a href="#" class="forgot__link"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="#26160C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>Назад</a>
+                <h2 class="forgot__title">Восстановление<br> пароля</h2>
+                <form class="forgot__form" action="#" name="forgot_form">
+                    <div class="forgot__form_input_wr input">
+                        <div class="input__label">E-mail</div>
+                        <input type="text" class="input__input only-eng req_input" name="email" placeholder="example@mail.ru">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <input type="submit" class="forgot__form_submit btn" value="Отправить">
+                </form>
+            </div>
+            <div class="personal_popup__content forgot_send" data-name="forgot_send">
+                <h2 class="forgot_send__title">Инструкция<br> будет отправлена<br>
+                    на указанную почту</h2>
+                <button class="forgot_send__btn btn">ОК</button>
+            </div>
+        </div>
+    </div>
 </header>
     <main class="main">
         <section class="investors_top">
     <div class="investors_top__content">
         <div class="investors_top__top">
+            <div class="investors_top__breadcrumbs breadcrumbs">
+                <div class="breadcrumbs_wr">
+                    <a href="/" class="breadcrumb this--link">Главная <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L1 9" stroke="#26160C" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </a>
+                    <div class="breadcrumb">Инвесторам</div>
+                </div>
+            </div>
             <div class="container">
                 <h1 class="investors_top__title">Инвестиции в стабильность</h1>
                 <div class="investors_top__subtitle">
                     Покупайте купоны и получайте процент с прибыли<br> в ведущей теплоэнергетической компании Ленобласти
                 </div>
-                <button class="investors_top__btn btn">Оставить заявку<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="investors_top__btn btn callback_open">Оставить заявку<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1.5L7 7L1 12.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg></button>
             </div>
@@ -240,11 +299,58 @@
             </div>
         </div>
     </div>
+    <div class="callback_popup">
+        <div class="callback_popup__body">
+            <div class="callback_popup__cross"></div>
+            <div class="callback_popup__img_wr">
+                <div class="callback_popup__img">
+                    <img src="./img/main/main_top/callback_img.png" alt="">
+                </div>
+            </div>
+            <div class="callback_popup__content callback active" data-name="callback">
+                <h2 class="callback__title">Обратная связь</h2>
+                <form class="callback__form" action="#" name="callback_form">
+                    <div class="callback__form_row">
+                        <div class="callback__form_input_wr input">
+                            <div class="input__label">Ваше имя*</div>
+                            <input type="text" class="input__input only-rus req_input" name="name" placeholder="Введите ваше имя">
+                            <div class="input__error">Введите корректное значение</div>
+                        </div>
+                        <div class="callback__form_input_wr input">
+                            <div class="input__label">Ваш телефон*</div>
+                            <input type="text" class="input__input phone-mask req_input" name="tel" value="+_(___)___-__-__">
+                            <div class="input__error">Введите корректное значение</div>
+                        </div>
+                        <div class="callback__form_input_wr input">
+                            <div class="input__label">Название организации</div>
+                            <input type="text" class="input__input" name="organization" placeholder="Введите название">
+                        </div>
+                        <div class="callback__form_input_wr input">
+                            <div class="input__label">Адрес объекта</div>
+                            <input type="text" class="input__input" name="address" placeholder="Введите адрес">
+                        </div>
+                        <div class="callback__form_input_wr input this--textarea">
+                            <div class="input__label">Комментарий</div>
+                            <textarea class="input__input" name="comment" placeholder="Напишите, что нам надо знать"></textarea>
+                        </div>
+                    </div>
+                    <div class="callback__form_bottom">
+                        <input type="submit" class="callback__form_submit btn" value="Получить консультацию">
+                        <div class="callback__form_agreement">Нажимая кнопку «Получить консультацию», вы соглашаетесь с Правилами сайта и Политикой конфиденциальности</div>
+                    </div>
+                </form>
+            </div>
+            <div class="callback_popup__content callback_send" data-name="callback_send">
+                <h2 class="callback_send__title">Спасибо за обращение!<br> Наш менеджер свяжется с Вами в ближайшее время</h2>
+                <button class="callback_send__btn btn">ОК</button>
+            </div>
+        </div>
+    </div>
 </section>
         <section class="emission section this--top">
     <div class="container">
         <div class="emission__content">
-            <h2 class="emission__title">Параметры эмиссии</h2>
+            <h2 class="emission__title this--red">Параметры эмиссии</h2>
             <div class="emission__line line"></div>
             <div class="emission__row">
                 <div class="emission__img_wr">
@@ -327,7 +433,7 @@
         <section class="documents section">
     <div class="container">
         <div class="documents__content">
-            <h2 class="documents__title">Документы</h2>
+            <h2 class="documents__title this--red">Документы</h2>
             <div class="documents__line line"></div>
             <div class="documents__row">
                 <div class="documents__left">
@@ -488,7 +594,7 @@
         <section class="main_map section">
             <div class="container">
                 <div class="main_map__content">
-                    <h2 class="main_map__title">Карта подключений</h2>
+                    <h2 class="main_map__title this--red">Карта подключений</h2>
                     <div class="main_map__line line"></div>
                     <div class="main_map__group">
                         <div class="main_map__map_wr">
@@ -670,7 +776,7 @@
                     </div>
                 </div>
                 <div class="investors_form__right">
-                    <h2 class="investors_form__title">Станьте инвестором</h2>
+                    <h2 class="investors_form__title this--red">Станьте инвестором</h2>
                     <form action="#" class="investors_form__form" name="investors_form">
                         <div class="investors_form__top">
                             <div class="investors_form__input_wr input">
@@ -695,7 +801,7 @@
                         </div>
                         <div class="investors_form__bottom">
                             <input type="submit" value="Отправить заявку" class="investors_form__submit btn">
-                            <div class="investors_form__agreement">Нажимая кнопку «Отправить», вы соглашаетесь с Правилами сайта и Политикой конфиденциальности</div>
+                            <div class="investors_form__agreement">Нажимая кнопку «Отправить заявку», вы соглашаетесь с Правилами сайта и Политикой конфиденциальности</div>
                         </div>
                     </form>
                 </div>
@@ -706,7 +812,7 @@
         <section class="contacts section">
     <div class="container">
         <div class="contacts__content">
-            <h2 class="contacts__title">Контакты</h2>
+            <h2 class="contacts__title this--red">Контакты</h2>
             <div class="contacts__line line"></div>
             <div class="contacts__head">
                 <div class="contacts__head_title">Головной офис АО «ЛОТЭК»</div>

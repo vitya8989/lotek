@@ -198,6 +198,56 @@
             </form>
         </div>
     </div>
+    <div class="personal_popup">
+        <div class="personal_popup__body">
+            <div class="personal_popup__cross"></div>
+            <div class="personal_popup__img_wr">
+                <div class="personal_popup__img">
+                    <img src="./img/header/popup_img.png" alt="">
+                </div>
+            </div>
+            <div class="personal_popup__content autorization active" data-name="autorization">
+                <h2 class="autorization__title">Авторизация</h2>
+                <form class="autorization__form" action="#" name="autorization_form">
+                    <div class="autorization__form_input_wr input">
+                        <div class="input__label">E-mail</div>
+                        <input type="text" class="input__input only-eng req_input" name="email" placeholder="example@mail.ru">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <div class="autorization__form_input_wr input">
+                        <div class="input__label">Пароль</div>
+                        <input type="password" class="input__input only-eng req_input" name="password" placeholder="Введите пароль">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <a href="#" class="autorization__forgot">Я забыл(а) пароль</a>
+                    <input type="submit" class="autorization__form_submit btn" value="Войти">
+                </form>
+                <a href="#" class="autorization__registration_link">Регистрация <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L1 13" stroke="#26160C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </a>
+            </div>
+            <div class="personal_popup__content forgot" data-name="forgot">
+                <a href="#" class="forgot__link"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="#26160C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>Назад</a>
+                <h2 class="forgot__title">Восстановление<br> пароля</h2>
+                <form class="forgot__form" action="#" name="forgot_form">
+                    <div class="forgot__form_input_wr input">
+                        <div class="input__label">E-mail</div>
+                        <input type="text" class="input__input only-eng req_input" name="email" placeholder="example@mail.ru">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <input type="submit" class="forgot__form_submit btn" value="Отправить">
+                </form>
+            </div>
+            <div class="personal_popup__content forgot_send" data-name="forgot_send">
+                <h2 class="forgot_send__title">Инструкция<br> будет отправлена<br>
+                    на указанную почту</h2>
+                <button class="forgot_send__btn btn">ОК</button>
+            </div>
+        </div>
+    </div>
 </header>
     <main class="main">
         <section class="main_top">
@@ -210,7 +260,7 @@
                 <h1 class="main_top__title">
                     Теплоэнергетическая компания<br> в Ленинградской области
                 </h1>
-                <button class="main_top__btn btn">
+                <button class="main_top__btn btn callback_open">
                     Оставить заявку на подключение
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="5" y="2" width="20" height="26" rx="2" stroke="#F8F8F8" stroke-width="2"/>
@@ -230,11 +280,58 @@
             </div>
         </div>
     </div>
+    <div class="callback_popup">
+        <div class="callback_popup__body">
+            <div class="callback_popup__cross"></div>
+            <div class="callback_popup__img_wr">
+                <div class="callback_popup__img">
+                    <img src="./img/main/main_top/callback_img.png" alt="">
+                </div>
+            </div>
+            <div class="callback_popup__content callback active" data-name="callback">
+                <h2 class="callback__title">Обратная связь</h2>
+                <form class="callback__form" action="#" name="callback_form">
+                    <div class="callback__form_row">
+                        <div class="callback__form_input_wr input">
+                            <div class="input__label">Ваше имя*</div>
+                            <input type="text" class="input__input only-rus req_input" name="name" placeholder="Введите ваше имя">
+                            <div class="input__error">Введите корректное значение</div>
+                        </div>
+                        <div class="callback__form_input_wr input">
+                            <div class="input__label">Ваш телефон*</div>
+                            <input type="text" class="input__input phone-mask req_input" name="tel" value="+_(___)___-__-__">
+                            <div class="input__error">Введите корректное значение</div>
+                        </div>
+                        <div class="callback__form_input_wr input">
+                            <div class="input__label">Название организации</div>
+                            <input type="text" class="input__input" name="organization" placeholder="Введите название">
+                        </div>
+                        <div class="callback__form_input_wr input">
+                            <div class="input__label">Адрес объекта</div>
+                            <input type="text" class="input__input" name="address" placeholder="Введите адрес">
+                        </div>
+                        <div class="callback__form_input_wr input this--textarea">
+                            <div class="input__label">Комментарий</div>
+                            <textarea class="input__input" name="comment" placeholder="Напишите, что нам надо знать"></textarea>
+                        </div>
+                    </div>
+                    <div class="callback__form_bottom">
+                        <input type="submit" class="callback__form_submit btn" value="Получить консультацию">
+                        <div class="callback__form_agreement">Нажимая кнопку «Получить консультацию», вы соглашаетесь с Правилами сайта и Политикой конфиденциальности</div>
+                    </div>
+                </form>
+            </div>
+            <div class="callback_popup__content callback_send" data-name="callback_send">
+                <h2 class="callback_send__title">Спасибо за обращение!<br> Наш менеджер свяжется с Вами в ближайшее время</h2>
+                <button class="callback_send__btn btn">ОК</button>
+            </div>
+        </div>
+    </div>
 </section>
         <section class="main_activities section this--top">
     <div class="container">
         <div class="main_activities__content">
-            <h2 class="main_activities__title">Направления деятельности</h2>
+            <h2 class="main_activities__title this--red">Направления деятельности</h2>
             <div class="main_activities__line line"></div>
             <div class="main_activities__items">
                 <div class="main_activities__item">
@@ -304,7 +401,7 @@
         <section class="main_map section this--top">
     <div class="container">
         <div class="main_map__content">
-            <h2 class="main_map__title">Карта подключений</h2>
+            <h2 class="main_map__title this--red">Карта подключений</h2>
             <div class="main_map__line line"></div>
             <div class="main_map__group">
                 <div class="main_map__map_wr">
@@ -479,7 +576,7 @@
         <section class="main_press section this--top">
     <div class="container">
         <div class="main_press__content">
-            <h2 class="main_press__title">Пресс-центр</h2>
+            <h2 class="main_press__title this--red">Пресс-центр</h2>
             <div class="main_press__line line"></div>
             <div class="main_press__items">
                 <ul class="main_press__links">
@@ -642,7 +739,7 @@
         <section class="main_about section this--top">
     <div class="container">
         <div class="main_about__content">
-            <h2 class="main_about__title">О компании</h2>
+            <h2 class="main_about__title this--red">О компании</h2>
             <div class="main_about__line line"></div>
             <div class="main_about__row">
                 <div class="main_about__left">
@@ -687,29 +784,29 @@
                         </li>
                     </ul>
                 </div>
-                <div class="main_about__slider_box">
-                    <div class="main_about__slider_btn_prev"></div>
-                    <div class="main_about__slider_btn_next"></div>
-                    <div class="main_about__slider_pagination"></div>
-                    <div class="main_about__slider swiper-container">
-                        <div class="main_about__slider_wrapper swiper-wrapper">
-                            <div class="main_about__slider_slide swiper-slide">
-                                <div class="main_about__slider_img">
+                <div class="main_about__slider_box default_slider__box">
+                    <div class="main_about__slider_btn_prev default_slider__btn_prev"></div>
+                    <div class="main_about__slider_btn_next default_slider__btn_next"></div>
+                    <div class="main_about__slider_pagination default_slider__pagination"></div>
+                    <div class="main_about__slider default_slider swiper-container">
+                        <div class="main_about__slider_wrapper default_slider__wrapper swiper-wrapper">
+                            <div class="main_about__slider_slide default_slider__slide swiper-slide">
+                                <div class="main_about__slider_img default_slider__img">
                                     <img src="./img/main/main_about/slider_img.jpg" alt="">
                                 </div>
-                                <div class="main_about__slider_text">Подпись к изображению</div>
+                                <div class="main_about__slider_text default_slider__text">Подпись к изображению</div>
                             </div>
-                            <div class="main_about__slider_slide swiper-slide">
-                                <div class="main_about__slider_img">
+                            <div class="main_about__slider_slide default_slider__slide swiper-slide">
+                                <div class="main_about__slider_img default_slider__img">
                                     <img src="./img/main/main_about/slider_img.jpg" alt="">
                                 </div>
-                                <div class="main_about__slider_text">Подпись к изображению</div>
+                                <div class="main_about__slider_text default_slider__text">Подпись к изображению</div>
                             </div>
-                            <div class="main_about__slider_slide swiper-slide">
-                                <div class="main_about__slider_img">
+                            <div class="main_about__slider_slide default_slider__slide swiper-slide">
+                                <div class="main_about__slider_img default_slider__img">
                                     <img src="./img/main/main_about/slider_img.jpg" alt="">
                                 </div>
-                                <div class="main_about__slider_text">Подпись к изображению</div>
+                                <div class="main_about__slider_text default_slider__text">Подпись к изображению</div>
                             </div>
                         </div>
                     </div>

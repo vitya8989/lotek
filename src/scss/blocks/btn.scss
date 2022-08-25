@@ -10,7 +10,7 @@
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.5;
-  color: #F8F8F8;
+  color: #F8F8F8!important;
   padding: 0 40px;
   white-space: nowrap;
 
@@ -29,5 +29,22 @@
   }
   &:active {
     background: #FB5613;
+  }
+  &.this--wh {
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    color: #26160C!important;
+    &:hover {
+      @media ($tabletMax) {
+        color: #FFFFFF;
+        background: #929DB6;
+        border: 1px solid #929DB6;
+      }
+    }
+    &:active {
+      color: #FFFFFF;
+      border: 1px solid #D03200;
+      background: #D03200;
+    }
   }
 }

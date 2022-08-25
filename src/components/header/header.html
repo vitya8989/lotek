@@ -184,4 +184,54 @@
             </form>
         </div>
     </div>
+    <div class="personal_popup">
+        <div class="personal_popup__body">
+            <div class="personal_popup__cross"></div>
+            <div class="personal_popup__img_wr">
+                <div class="personal_popup__img">
+                    <img src="./img/header/popup_img.png" alt="">
+                </div>
+            </div>
+            <div class="personal_popup__content autorization active" data-name="autorization">
+                <h2 class="autorization__title">Авторизация</h2>
+                <form class="autorization__form" action="#" name="autorization_form">
+                    <div class="autorization__form_input_wr input">
+                        <div class="input__label">E-mail</div>
+                        <input type="text" class="input__input only-eng req_input" name="email" placeholder="example@mail.ru">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <div class="autorization__form_input_wr input">
+                        <div class="input__label">Пароль</div>
+                        <input type="password" class="input__input only-eng req_input" name="password" placeholder="Введите пароль">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <a href="#" class="autorization__forgot">Я забыл(а) пароль</a>
+                    <input type="submit" class="autorization__form_submit btn" value="Войти">
+                </form>
+                <a href="#" class="autorization__registration_link">Регистрация <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L1 13" stroke="#26160C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </a>
+            </div>
+            <div class="personal_popup__content forgot" data-name="forgot">
+                <a href="#" class="forgot__link"><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="#26160C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>Назад</a>
+                <h2 class="forgot__title">Восстановление<br> пароля</h2>
+                <form class="forgot__form" action="#" name="forgot_form">
+                    <div class="forgot__form_input_wr input">
+                        <div class="input__label">E-mail</div>
+                        <input type="text" class="input__input only-eng req_input" name="email" placeholder="example@mail.ru">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <input type="submit" class="forgot__form_submit btn" value="Отправить">
+                </form>
+            </div>
+            <div class="personal_popup__content forgot_send" data-name="forgot_send">
+                <h2 class="forgot_send__title">Инструкция<br> будет отправлена<br>
+                    на указанную почту</h2>
+                <button class="forgot_send__btn btn">ОК</button>
+            </div>
+        </div>
+    </div>
 </header>

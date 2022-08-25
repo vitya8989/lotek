@@ -1,5 +1,150 @@
 .input {
   position: relative;
+
+  &.this--textarea {
+    width: 100%;
+
+    textarea {
+      resize: none;
+    }
+  }
+  .SumoSelect {
+    width: 100%;
+
+    .CaptionCont {
+      position: relative;
+      border: none;
+      border-bottom: 1px solid #929DB6;
+      min-height: 0;
+      background-color: transparent;
+      border-radius: 2px;
+      margin: 0;
+      transition: 0.1s;
+      span {
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.67;
+        color: #26160C;
+
+        @media ($tablet3) {
+          font-size: 1.4rem;
+          line-height: 1.79;
+        }
+
+        &.placeholder {
+          font-style: normal;
+          color: #CDCDCD;
+        }
+      }
+      label {
+        right: 8px;
+        transition: 0.1s;
+        i {
+          background-image: url('../img/icons/arrow_down.svg');
+          background-position: center 0;
+        }
+      }
+    }
+    .SelectBox {
+      padding: 5px 39px 10px 0;
+    }
+  }
+  .SumoSelect:hover > .CaptionCont{
+    box-shadow: none;
+    border-color: #4F4F4F;
+  }
+  .SumoSelect:focus > .CaptionCont {
+    box-shadow: none;
+    border-color: #26160C;
+  }
+  .SumoSelect.open {
+    .CaptionCont {
+      box-shadow: none;
+      border-color: #26160C;
+      background: #FFFFFF;
+      margin-left: -10px;
+      margin-right: -10px;
+      border-radius: 5px 5px 0 0;
+      border-bottom: 1px solid transparent;
+      @media ($tablet3) {
+        margin-left: -5px;
+        margin-right: -5px;
+      }
+      label {
+        right: 18px;
+        @media ($tablet3) {
+          right: 13px;
+        }
+      }
+    }
+    .SelectBox {
+      padding: 5px 39px 10px 10px;
+      @media ($tablet3) {
+        padding: 5px 39px 10px 5px;
+      }
+    }
+    .optWrapper {
+      left: -10px;
+      width: calc(100% + 20px);
+      top: 40px;
+      border-radius: 0 0 5px 5px;
+      border: none;
+      box-shadow: none;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      @media ($tablet3) {
+        left: -5px;
+        width: calc(100% + 10px);
+      }
+      ::-webkit-scrollbar {
+        border-radius: 2px;
+        width: 5px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #E1E1E1;
+        border-radius: 2px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #929DB6;
+        border-radius: 2px;
+      }
+    }
+    .opt.disabled.selected {
+      display: none;
+    }
+    .options {
+      border-radius: 0;
+      padding: 0 5px;
+      max-height: 205.25px;
+      li.opt{
+        border-bottom: none;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.67;
+        color: #26160C;
+        padding: 0 5px;
+        border-radius: 2px;
+        transition: 0.2s;
+        @media ($tablet3) {
+          font-size: 1.4rem;
+          line-height: 1.79;
+          padding: 0;
+        }
+
+        &:hover {
+          @media ($tablet) {
+            background: #929DB6;
+            color: #FFFFFF;
+          }
+        }
+        label {
+          padding: 5px 0;
+        }
+      }
+    }
+  }
 }
 .input__label {
   white-space: nowrap;
@@ -12,10 +157,13 @@
   white-space: nowrap;
   transition: 0.3s;
   position: absolute;
-  top: 0;
-  right: 0;
+  left: 0;
+  bottom: -24px;
   opacity: 0;
   visibility: hidden;
+}
+.req_input.error {
+  border-bottom: 1px solid #D03200;
 }
 .req_input.error + .input__error {
   opacity: 1;
@@ -29,6 +177,7 @@
   line-height: 1.67;
   transition: 0.3s;
   font-variant-numeric: lining-nums;
+  background: transparent;
 
   @media ($tablet3) {
     font-size: 1.4rem;
@@ -45,5 +194,60 @@
   }
   &:focus {
     border-bottom: 1px solid #26160C;
+  }
+}
+
+.checkbox {
+
+}
+.checkbox__checkbox {
+  display: none;
+}
+.checkbox__checkbox:checked + .checkbox__label {
+  &::before {
+    background: #D03200;
+    border: 1px solid #D03200;
+  }
+  span {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.checkbox__label {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #26160C;
+  padding-left: 50px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+
+  span {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &::before {
+    transition: 0.3s;
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 0;
+    top: 0;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    background: transparent;
   }
 }

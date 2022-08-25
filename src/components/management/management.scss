@@ -1,0 +1,191 @@
+.management {
+  position: relative;
+  padding: 85px 0 70px;
+  @media ($tablet3) {
+    padding: 44px 0 30px;
+  }
+}
+.management__top {
+  margin-top: 37px;
+  display: flex;
+
+  @media ($desktop) {
+    display: block;
+  }
+}
+.management__top_left {
+  width: calc(27.63% - 90px);
+  margin-right: 90px;
+  margin-bottom: -54px;
+  @media ($desktop) {
+    width: auto;
+    margin-right: 0;
+    display: flex;
+    margin-left: -40px;
+    margin-bottom: 0;
+  }
+  @media ($tablet3) {
+    display: block;
+    margin-left: 0;
+  }
+}
+.management__top_right {
+  width: 72.37%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -40px;
+  margin-bottom: -22px;
+  @media ($desktop) {
+    margin-top: 40px;
+    width: auto;
+  }
+  @media ($tablet3) {
+    display: block;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+.management__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -40px;
+  margin-bottom: -40px;
+  margin-top: 74px;
+  @media ($tablet) {
+    margin-top: 40px;
+  }
+  @media ($tablet3) {
+    margin-top: 20px;
+    margin-left: -20px;
+    margin-bottom: -20px;
+  }
+  @media ($mobileMiddle) {
+    display: block;
+    margin-left: 0;
+  }
+}
+.management__card {
+  width: calc(25% - 40px);
+  margin-left: 40px;
+  margin-bottom: 40px;
+  @media ($tablet) {
+    width: calc(33.333% - 40px);
+  }
+  @media ($tablet3) {
+    width: calc(50% - 20px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  @media ($mobileMiddle) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  &.this--big {
+    margin-bottom: 22px;
+    width: calc(33.333% - 40px);
+    @media ($tablet3) {
+      display: flex;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+    .management__card_img_wr {
+      max-width: 150px;
+      @media ($tablet3) {
+        max-width: none;
+        width: calc(37.68% - 10px);
+        margin-right: 10px;
+      }
+    }
+    .management__card_title {
+      margin-top: 10px;
+      @media ($tablet3) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &.this--overbig {
+    margin-bottom: 54px;
+    margin-left: 0;
+    width: 100%;
+
+    @media ($desktop) {
+      margin-left: 40px;
+      width: calc(50% - 40px);
+      margin-bottom: 0;
+    }
+    @media ($tablet3) {
+      display: flex;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+    .management__card_img_wr {
+      @media ($tablet3) {
+        width: calc(46.37% - 10px);
+        margin-right: 10px;
+      }
+    }
+    .management__card_bottom {
+      @media ($tablet3) {
+        width: 53.63%;
+      }
+    }
+    .management__card_title {
+      margin-top: 10px;
+      @media ($tablet3) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+.management__card_img_wr {
+  @media ($tablet3) {
+    flex: 0 0 auto;
+  }
+}
+.management__card_img {
+  position: relative;
+  padding-top: 100%;
+  overflow: hidden;
+  border: 1px solid #CDCDCD;
+  border-radius: 6.5px;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.management__card_title {
+  font-size: 1.8rem;
+  line-height: 1.67;
+  @media ($tablet3) {
+    font-size: 1.4rem;
+    line-height: 1.79;
+  }
+}
+.management__card_name {
+  color: #4F4F4F;
+  margin-top: 5px;
+  @media ($tablet3) {
+    font-size: 1.3rem;
+    line-height: 1.54;
+  }
+}
+.management__card_mail {
+  margin-top: 5px;
+  color: #929DB6;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  @media ($tablet3) {
+    font-size: 1.4rem;
+    line-height: 1.79;
+  }
+}

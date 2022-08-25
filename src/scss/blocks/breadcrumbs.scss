@@ -1,0 +1,41 @@
+.breadcrumbs {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-x: auto;
+  max-width: 100%;
+
+  @media ($tablet) {
+    max-width: 100%;
+    top: 10px;
+  }
+}
+.breadcrumbs_wr {
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
+  padding-left: 20px;
+  @media ($tablet) {
+    padding-left: 15px;
+  }
+}
+.breadcrumb {
+  margin-left: 10px;
+  color: #4F4F4F;
+  white-space: nowrap;
+  flex: 0 0 auto;
+  padding-right: 20px;
+  @media ($tablet) {
+    padding-right: 15px;
+  }
+
+  &.this--link {
+    color: #26160C;
+    padding-right: 0;
+  }
+
+  svg {
+    margin-left: 8px;
+  }
+}

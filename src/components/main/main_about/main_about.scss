@@ -1,5 +1,4 @@
 .main_about {
-  background: #F8F8F8;
   padding-bottom: 100px;
 }
 .main_about__content {
@@ -16,6 +15,17 @@
   @media ($tablet) {
     flex-direction: column-reverse;
     margin-top: 15px;
+  }
+  &.this--services_card {
+    margin-top: 0;
+    @media ($tablet) {
+      flex-direction: column;
+    }
+    .main_about__left {
+      @media ($tablet) {
+        margin-top: 0;
+      }
+    }
   }
 }
 .main_about__left {
@@ -88,128 +98,5 @@
   }
 }
 .main_about__slider_box {
-  min-width: 0;
   width: 57.9%;
-  position: relative;
-  padding-bottom: 24px;
-  @media ($tablet) {
-    width: calc(100% + 30px);
-    margin: 0 -15px;
-    padding-bottom: 0;
-  }
-}
-.main_about__slider {
-  overflow: hidden;
-}
-.main_about__slider_img {
-  padding-top: 66.25%;
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden;
-  @media ($tablet) {
-    border-radius: 0;
-  }
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-.main_about__slider_text {
-  margin-top: 10px;
-  color: #000000;
-  @media ($tablet) {
-    margin-left: 15px;
-    margin-top: 5px;
-  }
-  @media ($tablet3) {
-    font-size: 1.3rem;
-    line-height: 1.54;
-  }
-}
-.main_about__slider_pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-  position: absolute;
-  bottom: 0;
-  z-index: 5;
-  text-align: center;
-  @media ($tablet) {
-    bottom: 40px;
-  }
-
-  .swiper-pagination-bullet {
-    opacity: 1;
-    position: relative;
-    margin: 0 7.5px;
-    width: 50px;
-    height: 4px;
-    background: #CDCDCD;
-    border-radius: 0;
-    @media ($tablet) {
-      width: 20px;
-      height: 3px;
-      margin: 0 5px;
-    }
-  }
-
-  .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: #D03200;
-  }
-}
-.main_about__slider_btn_next,
-.main_about__slider_btn_prev {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #F8F8F8;
-  border-radius: 50%;
-  transition: 0.3s;
-  position: absolute;
-  top: calc(50% - 35px);
-  z-index: 2;
-  cursor: pointer;
-  @media ($tablet) {
-   display: none;
-  }
-
-  &::before,
-  &::after {
-    position: absolute;
-    content: '';
-    width: 9px;
-    height: 2px;
-    left: 10px;
-    background:#F8F8F8;
-    transition: 0.3s;
-  }
-  &::before {
-    transform: rotate(45deg);
-    top: 10px;
-  }
-  &::after {
-    transform: rotate(-45deg);
-    bottom: 10.5px;
-  }
-  &.swiper-button-disabled {
-    opacity: 0;
-    visibility: hidden;
-  }
-  &:hover {
-    @media ($tabletMax) {
-      border: 1px solid #D03200;
-      &::before,
-      &::after {
-        background: #D03200;
-      }
-    }
-  }
-}
-.main_about__slider_btn_prev {
-  transform: rotate(180deg);
-  left: 20px;
-}
-.main_about__slider_btn_next {
-  right: 20px;
 }

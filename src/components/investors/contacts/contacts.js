@@ -1,3 +1,4 @@
+const contactsSliderBlock = document.querySelector('.contacts__slider');
 const contactsSlider = new Swiper('.contacts__slider', {
     speed: 700,
     slidesPerView: 1,
@@ -26,6 +27,12 @@ const contactsSlider = new Swiper('.contacts__slider', {
         }
     }
 });
-window.addEventListener('load', () => {
-    contactsSlider.update();
-});
+
+if (contactsSliderBlock) {
+    window.addEventListener('load', () => {
+        contactsSlider.update();
+    });
+}
+
+
+

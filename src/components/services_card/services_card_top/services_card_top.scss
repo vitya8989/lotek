@@ -1,0 +1,48 @@
+.services_card_top__content {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 147px);
+  @media ($tablet) {
+    min-height: 0;
+  }
+}
+.services_card_top__top {
+  background: url('../img/services_card/services_card_top/bg.jpg') center/cover no-repeat;
+  padding: 114px 0 100px;
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  @media ($tablet3) {
+    padding: 74px 0 30px;
+  }
+}
+.services_card_top__subtitle {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  text-align: center;
+  @media ($tablet3) {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    line-height: 1.79;
+  }
+}
+.services_card_top__btn {
+  margin: 40px auto 0;
+  @media ($tablet3) {
+    margin: 20px auto 0;
+    width: 250px;
+  }
+  svg {
+    margin-left: 15px;
+  }
+}
+.services_card_top__bottom {
+  padding: 60px 0;
+  background: #F8F8F8;
+  @media ($tablet3) {
+    padding: 40px 0;
+  }
+}

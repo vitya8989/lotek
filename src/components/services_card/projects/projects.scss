@@ -1,0 +1,116 @@
+.projects {
+  @media ($tablet3) {
+    overflow: hidden;
+  }
+}
+.projects__content {
+  padding-bottom: 100px;
+  @media ($tablet) {
+    padding-bottom: 40px;
+  }
+}
+.projects__slider {
+  @media ($tablet3) {
+    overflow: visible;
+  }
+}
+.projects__slider_box {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  @media ($tablet) {
+    margin-top: 15px;
+  }
+  @media ($tablet3) {
+    padding-bottom: 0;
+  }
+}
+.projects__slider_slide.swiper-slide {
+  @media ($tablet3) {
+    width: 260px;
+  }
+}
+.projects__slider_img {
+  padding-top: 133.61%;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 67%, rgba(0, 0, 0, 0.8) 100%);
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.projects__slider_review {
+  position: absolute;
+  bottom: 20px;
+  padding: 0 20px;
+  z-index: 3;
+}
+.projects__slider_title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #FFFFFF;
+  @media ($tablet3) {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.56;
+  }
+}
+.projects__slider_text {
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #FFFFFF;
+  margin-top: 5px;
+  @media ($tablet3) {
+    font-size: 1.4rem;
+    line-height: 1.79;
+    margin-top: 0;
+  }
+}
+.projects__slider_btn_next.default_slider__btn_next,
+.projects__slider_btn_prev.default_slider__btn_prev {
+  border: 1px solid #929DB6;
+  &::before,
+  &::after {
+    background:#929DB6;
+  }
+}
+.projects__slider_btn_next.default_slider__btn_next {
+  right: -72px;
+  @media (max-width: 1740px) {
+    right: 0;
+    top: -110px;
+  }
+}
+.projects__slider_btn_prev.default_slider__btn_prev {
+  left: -72px;
+  @media (max-width: 1740px) {
+    left: auto;
+    right: 45px;
+    top: -110px;
+  }
+}
+.projects__slider_pagination.default_slider__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  @media ($tablet) {
+    bottom: 0;
+  }
+  @media ($tablet3) {
+    display: none;
+  }
+}

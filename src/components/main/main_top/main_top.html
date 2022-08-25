@@ -8,7 +8,7 @@
                 <h1 class="main_top__title">
                     Теплоэнергетическая компания<br> в Ленинградской области
                 </h1>
-                <button class="main_top__btn btn">
+                <button class="main_top__btn btn callback_open">
                     Оставить заявку на подключение
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="5" y="2" width="20" height="26" rx="2" stroke="#F8F8F8" stroke-width="2"/>
@@ -25,6 +25,53 @@
                 <div class="main_top__map">
                     <img src="./img/main/main_top/main_top_map.png" alt="">
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="callback_popup">
+        <div class="callback_popup__body">
+            <div class="callback_popup__cross"></div>
+            <div class="callback_popup__img_wr">
+                <div class="callback_popup__img">
+                    <img src="./img/main/main_top/callback_img.png" alt="">
+                </div>
+            </div>
+            <div class="callback_popup__content callback active" data-name="callback">
+                <h2 class="callback__title">Обратная связь</h2>
+                <form class="callback__form" action="#" name="callback_form">
+                    <div class="callback__form_row">
+                        <div class="callback__form_input_wr input">
+                            <div class="input__label">Ваше имя*</div>
+                            <input type="text" class="input__input only-rus req_input" name="name" placeholder="Введите ваше имя">
+                            <div class="input__error">Введите корректное значение</div>
+                        </div>
+                        <div class="callback__form_input_wr input">
+                            <div class="input__label">Ваш телефон*</div>
+                            <input type="text" class="input__input phone-mask req_input" name="tel" value="+_(___)___-__-__">
+                            <div class="input__error">Введите корректное значение</div>
+                        </div>
+                        <div class="callback__form_input_wr input">
+                            <div class="input__label">Название организации</div>
+                            <input type="text" class="input__input" name="organization" placeholder="Введите название">
+                        </div>
+                        <div class="callback__form_input_wr input">
+                            <div class="input__label">Адрес объекта</div>
+                            <input type="text" class="input__input" name="address" placeholder="Введите адрес">
+                        </div>
+                        <div class="callback__form_input_wr input this--textarea">
+                            <div class="input__label">Комментарий</div>
+                            <textarea class="input__input" name="comment" placeholder="Напишите, что нам надо знать"></textarea>
+                        </div>
+                    </div>
+                    <div class="callback__form_bottom">
+                        <input type="submit" class="callback__form_submit btn" value="Получить консультацию">
+                        <div class="callback__form_agreement">Нажимая кнопку «Получить консультацию», вы соглашаетесь с Правилами сайта и Политикой конфиденциальности</div>
+                    </div>
+                </form>
+            </div>
+            <div class="callback_popup__content callback_send" data-name="callback_send">
+                <h2 class="callback_send__title">Спасибо за обращение!<br> Наш менеджер свяжется с Вами в ближайшее время</h2>
+                <button class="callback_send__btn btn">ОК</button>
             </div>
         </div>
     </div>

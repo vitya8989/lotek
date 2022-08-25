@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Карточка услуги</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+
+<body>
+<div class="wrapper">
+    @@include('components/header/header.html')
+    <main class="main">
+        @@include('components/services_card/services_card_top/services_card_top.html')
+        @@include('components/services_card/services_card_slider/services_card_slider.html')
+        @@include('components/services_card/work_steps/work_steps.html')
+        @@include('components/services_card/projects/projects.html')
+        @@include('components/services_card/services_card_form/services_card_form.html')
+        @@include('components/services_card/partners/partners.html')
+    </main>
+    @@include('components/footer/footer.html')
+</div>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>

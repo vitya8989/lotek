@@ -12,8 +12,24 @@
   flex: 1 0 auto;
   display: flex;
   align-items: center;
+  position: relative;
   @media ($tablet3) {
     padding: 74px 0 30px;
+  }
+}
+.investors_top__breadcrumbs {
+  .breadcrumb {
+    color: #E1E1E1;
+
+    &.this--link {
+      color: #FFFFFF;
+    }
+
+    svg {
+      path {
+        stroke: #FFFFFF;
+      }
+    }
   }
 }
 .investors_top__title {
@@ -66,6 +82,27 @@
   }
   @media ($mobileMiddle) {
     margin-left: -5px;
+  }
+  &.this--services_card {
+    margin-left: -50px;
+    @media ($tablet) {
+      margin-bottom: -30px;
+    }
+    @media ($mobileMiddle) {
+      margin-left: -5px;
+    }
+    .investors_top__count {
+      margin-left: 50px;
+      width: calc(20% - 50px);
+      @media ($tablet) {
+        width: calc(33.333% - 50px);
+        margin-bottom: 30px;
+      }
+      @media ($mobileMiddle) {
+        margin-left: 5px;
+        width: calc(50% - 5px);
+      }
+    }
   }
 }
 .investors_top__count {

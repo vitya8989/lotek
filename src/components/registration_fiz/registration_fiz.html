@@ -1,0 +1,116 @@
+<section class="registration">
+    <div class="container">
+        <div class="registration__content">
+            <div class="registration__breadcrumbs breadcrumbs">
+                <div class="breadcrumbs_wr">
+                    <a href="/" class="breadcrumb this--link">Главная
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L1 9" stroke="#26160C" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <div class="breadcrumb">Регистрация</div>
+                </div>
+            </div>
+            <h1 class="registration__title">Регистрация</h1>
+            <div class="registration__filter filter">
+                <a href="#" class="filter_item">Юр. лицо</a>
+                <a href="#" class="filter_item">ИП</a>
+                <a href="#" class="filter_item active">Физ. лицо</a>
+            </div>
+            <form class="registration__form registration__form_fiz" name="registration_form" action="#">
+                <div class="registration__form_block">
+                    <h2 class="registration__form_title">Реквизиты</h2>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">ФИО*</div>
+                        <input type="text" class="input__input only-rus req_input" name="organization" placeholder="Введите ФИО">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">Дата рождения*</div>
+                        <input type="text" class="input__input" name="organization" placeholder="__.__.____">
+                    </div>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">Место рождения*</div>
+                        <input type="text" class="input__input" name="organization">
+                    </div>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">Серия паспорта*</div>
+                        <input type="text" class="input__input" name="organization" placeholder="__ __">
+                    </div>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">Номер паспорта*</div>
+                        <input type="text" class="input__input" name="organization" placeholder="______">
+                    </div>
+                    <div class="registration__form__input_wr input this--textarea">
+                        <div class="input__label">Паспорт выдан*</div>
+                        <textarea class="input__input" name="input" placeholder="Когда, кем, код поздразделения
+"></textarea>
+                    </div>
+                </div>
+                <div class="registration__form_block">
+                    <h2 class="registration__form_title">Контакты заявителя</h2>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">E-mail (ваш будущий логин)*</div>
+                        <input type="text" class="input__input only-eng req_input" name="mail"
+                               placeholder="example@mail.ru">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">Телефон*</div>
+                        <input type="text" class="input__input phone-mask req_input" name="tel"
+                               value="+_(___)___-__-__">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">Факс</div>
+                        <input type="text" class="input__input phone-mask" name="tel2" value="+_(___)___-__-__">
+                    </div>
+                </div>
+                <div class="registration__form_block">
+                    <div class="registration__form_checkbox checkbox">
+                        <input type="checkbox" name="checkbox_1" id="checkbox_1" class="checkbox__checkbox">
+                        <label class="checkbox__label" for="checkbox_1"><span>
+                            <svg width="24" height="15"
+                                 viewBox="0 0 24 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 4.5L10 13.5L22.5 1" stroke="#F8F8F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            </span>Имеется представитель</label>
+                    </div>
+                    <h2 class="registration__form_title">Контакты представителя</h2>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">ФИО представителя</div>
+                        <input type="text" class="input__input only-rus" name="name" placeholder="Введите ФИО">
+                    </div>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">E-mail</div>
+                        <input type="text" class="input__input only-eng" name="mail" placeholder="example@mail.ru">
+                    </div>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">Телефон</div>
+                        <input type="text" class="input__input phone-mask" name="tel" value="+_(___)___-__-__">
+                    </div>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">Факс</div>
+                        <input type="text" class="input__input phone-mask" name="tel2" value="+_(___)___-__-__">
+                    </div>
+                </div>
+                <div class="registration__form_block">
+                    <h2 class="registration__form_title">Пароль</h2>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">Придумайте пароль*</div>
+                        <input type="password" class="input__input only-eng req_input" name="pass1">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                    <div class="registration__form__input_wr input">
+                        <div class="input__label">Повторите пароль*</div>
+                        <input type="password" class="input__input only-eng req_input" name="pass2">
+                        <div class="input__error">Введите корректное значение</div>
+                    </div>
+                </div>
+                <div class="registration__form_agree">Нажимая кнопку «Зарегистрироваться», вы соглашаетесь с Правилами сайта и Политикой конфиденциальности</div>
+                <input type="submit" class="registration__form_submit btn" value="Зарегистрироваться">
+            </form>
+        </div>
+    </div>
+</section>
