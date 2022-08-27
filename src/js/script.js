@@ -32,6 +32,12 @@
 
 @@include('../components/lk/history/history.js');
 
+@@include('../components/lk/help/help.js');
+
+@@include('../components/lk/applications_client/applications.js');
+
+@@include('../components/lk/applications_forms/applications_forms.js');
+
 const onlyRus = document.querySelectorAll('.only-rus');
 const maskPhone = document.querySelectorAll('.phone-mask');
 const onlyEng = document.querySelectorAll('.only-eng');

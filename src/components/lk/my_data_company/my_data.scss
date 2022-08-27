@@ -1,0 +1,14 @@
+.my_data__form {
+  max-width: 500px;
+  margin-top: 30px;
+
+  @media ($tablet) {
+    margin: 20px auto 0;
+  }
+}
+.my_data__form_submit {
+  margin-top: 60px;
+  @media ($tablet) {
+    margin: 40px auto 0;
+  }
+}

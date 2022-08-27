@@ -37,9 +37,9 @@
   .table {
     th:nth-child(1) {
       width: 10.9%;
-      padding: 30px 10px 30px 20px;
+      padding: 30px 5px 30px 20px;
       @media ($desktop) {
-        padding: 20px 10px 20px 20px;
+        padding: 20px 5px 20px 20px;
       }
     }
     th:nth-child(2) {
@@ -51,20 +51,20 @@
     th:nth-child(4) {
       width: 35.4%;
       @media ($tablet) {
-        padding: 20px 10px;
+        padding: 20px 5px;
       }
     }
     th:nth-child(5) {
       width: 17.4%;
-      padding: 30px 20px 30px 10px;
+      padding: 30px 20px 30px 5px;
       @media ($desktop) {
-        padding: 20px 20px 20px 10px;
+        padding: 20px 20px 20px 5px;
       }
     }
     td:nth-child(1) {
-      padding: 30px 10px 30px 20px;
+      padding: 30px 5px 30px 20px;
       @media ($desktop) {
-        padding: 20px 10px 20px 20px;
+        padding: 20px 5px 20px 20px;
       }
     }
     td:nth-child(4) {
@@ -73,15 +73,15 @@
       }
     }
     td:nth-child(5) {
-      padding: 30px 20px 30px 10px;
+      padding: 30px 20px 30px 5px;
       @media ($desktop) {
-        padding: 20px 20px 20px 10px;
+        padding: 20px 20px 20px 5px;
       }
     }
 
     th,
     td {
-      padding: 30px 10px;
+      padding: 30px 5px;
       font-size: 1.6rem;
       line-height: 1.5;
 
@@ -90,6 +90,38 @@
       }
       @media ($desktop) {
         padding: 20px 10px;
+      }
+    }
+  }
+  &.this--applications {
+    .table {
+      .history__table_row {
+        color: #CA690F;
+        &.this--color_1 {
+          color: #0548C9;
+        }
+        &.this--color_2 {
+          color: #248414;
+        }
+        &.this--color_3 {
+          color: #D03636;
+        }
+      }
+
+      th:nth-child(1) {
+        width: 13.18%;
+      }
+      th:nth-child(2) {
+
+      }
+      th:nth-child(3) {
+        width: 10.54%;
+      }
+      th:nth-child(4) {
+        width: 30.75%;
+      }
+      th:nth-child(5) {
+        width: 23.56%;
       }
     }
   }
@@ -127,6 +159,7 @@
 }
 
 .history__arrow {
+  flex: 0 0 auto;
   width: 30px;
   height: 30px;
   border: 1px solid #929DB6;

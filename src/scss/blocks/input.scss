@@ -117,6 +117,9 @@
       border-radius: 0;
       padding: 0 5px;
       max-height: 205.25px;
+      @media ($tablet3) {
+        padding: 0 2.5px;
+      }
       li.opt{
         border-bottom: none;
         font-weight: 400;
@@ -129,7 +132,7 @@
         @media ($tablet3) {
           font-size: 1.4rem;
           line-height: 1.79;
-          padding: 0;
+          padding: 0 2.5px;
         }
 
         &:hover {
@@ -146,8 +149,13 @@
   }
 }
 .input__label {
-  white-space: nowrap;
-  padding-right: 212px;
+  font-size: 1.8rem;
+  line-height: 1.67;
+
+  @media ($tablet3) {
+    font-size: 1.4rem;
+    line-height: 1.79;
+  }
 }
 .input__error {
   color: #D03200;
@@ -193,6 +201,9 @@
   }
   &:focus {
     border-bottom: 1px solid #26160C;
+  }
+  &.this--mw_500 {
+    max-width: 500px;
   }
 }
 

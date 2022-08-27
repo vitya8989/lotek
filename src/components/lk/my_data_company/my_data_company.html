@@ -1,0 +1,106 @@
+<section class="lk">
+    <div class="container">
+        <div class="lk__content">
+            <span class="lk__mob_menu_btn"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15.9999" cy="10.2065" r="7.05792" stroke="#FFFFFF" stroke-width="3"/>
+                        <path d="M4.96456 28.3281C5.22975 23.4434 9.89034 19.2625 16 19.2625C22.1097 19.2625 26.7703 23.4434 27.0355 28.3281H4.96456Z" stroke="#FFFFFF" stroke-width="3"/>
+                    </svg></span>
+            <div class="lk__menu">
+                <span class="lk__menu_cross"></span>
+                <div class="lk__menu_title">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="15.9999" cy="10.2065" r="7.05792" stroke="#4F4F4F" stroke-width="3"/>
+                        <path d="M4.96456 28.3281C5.22975 23.4434 9.89034 19.2625 16 19.2625C22.1097 19.2625 26.7703 23.4434 27.0355 28.3281H4.96456Z" stroke="#4F4F4F" stroke-width="3"/>
+                    </svg>
+                    Личный кабинет
+                </div>
+                <div class="lk__menu_line line"></div>
+                <ul class="lk__menu_items">
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link">Подача показаний</a></li>
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link">Заявки</a></li>
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link">История показаний</a></li>
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link">Документы</a></li>
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link active">Мои данные</a></li>
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link">Мои реквизиты</a></li>
+                    <li class="lk__menu_item"><a href="#" class="lk__menu_link">Помощь</a></li>
+                </ul>
+                <div class="lk__menu_line line"></div>
+                <a href="#" class="lk__menu_exit">Выйти из личного кабинета</a>
+            </div>
+            <div class="lk__body">
+                <div class="my_data">
+                    <h1 class="lk__title">Мои данные</h1>
+                    <form class="my_data__form my_data__form_company" name="my_data_form_company" action="#">
+                        <div class="registration__form_block">
+                            <h2 class="registration__form_title">Контакты руководителя</h2>
+                            <div class="registration__form__input_wr input">
+                                <div class="input__label">ФИО руководителя*</div>
+                                <input type="text" class="input__input only-rus" name="name"
+                                       placeholder="Введите ФИО">
+                            </div>
+                            <div class="registration__form__input_wr input">
+                                <div class="input__label">E-mail</div>
+                                <input type="text" class="input__input only-eng" name="mail"
+                                       placeholder="example@mail.ru">
+                            </div>
+                            <div class="registration__form__input_wr input">
+                                <div class="input__label">Телефон*</div>
+                                <input type="text" class="input__input phone-mask" name="tel"
+                                       value="+_(___)___-__-__">
+                            </div>
+                            <div class="registration__form__input_wr input">
+                                <div class="input__label">Факс</div>
+                                <input type="text" class="input__input phone-mask" name="tel2" value="+_(___)___-__-__">
+                            </div>
+                        </div>
+                        <div class="registration__form_block">
+                            <div class="registration__form_checkbox checkbox">
+                                <input type="checkbox" name="checkbox_1" id="checkbox_1" class="checkbox__checkbox">
+                                <label class="checkbox__label" for="checkbox_1"><span>
+                            <svg width="24" height="15"
+                                 viewBox="0 0 24 15" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 4.5L10 13.5L22.5 1" stroke="#F8F8F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                            </span>Имеется представитель</label>
+                            </div>
+                            <h2 class="registration__form_title">Контакты представителя</h2>
+                            <div class="registration__form__input_wr input">
+                                <div class="input__label">ФИО представителя</div>
+                                <input type="text" class="input__input only-rus" name="name" placeholder="Введите ФИО">
+                            </div>
+                            <div class="registration__form__input_wr input">
+                                <div class="input__label">E-mail</div>
+                                <input type="text" class="input__input only-eng" name="mail" placeholder="example@mail.ru">
+                            </div>
+                            <div class="registration__form__input_wr input">
+                                <div class="input__label">Телефон</div>
+                                <input type="text" class="input__input phone-mask" name="tel" value="+_(___)___-__-__">
+                            </div>
+                            <div class="registration__form__input_wr input">
+                                <div class="input__label">Факс</div>
+                                <input type="text" class="input__input phone-mask" name="tel2" value="+_(___)___-__-__">
+                            </div>
+                        </div>
+                        <div class="registration__form_block">
+                            <h2 class="registration__form_title">Сменить пароль</h2>
+                            <div class="registration__form__input_wr input">
+                                <div class="input__label">Старый пароль*</div>
+                                <input type="password" class="input__input only-eng" name="pass1">
+                            </div>
+                            <div class="registration__form__input_wr input">
+                                <div class="input__label">Новый пароль*</div>
+                                <input type="password" class="input__input only-eng" name="pass2">
+                            </div>
+                            <div class="registration__form__input_wr input">
+                                <div class="input__label">Повторите пароль*</div>
+                                <input type="password" class="input__input only-eng" name="pass3">
+                            </div>
+                        </div>
+                        <input type="submit" class="my_data__form_submit btn" value="Сохранить изменения">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

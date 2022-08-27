@@ -378,6 +378,10 @@ h2.callback__title {
     margin-left: 0;
     margin-bottom: 20px;
   }
+
+  &.this--textarea {
+    width: 100%;
+  }
 }
 .callback__form_bottom {
   margin-top: 36px;

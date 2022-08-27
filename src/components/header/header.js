@@ -15,6 +15,10 @@ burger.onclick = () => {
 }
 headerCross.onclick = () => {
     mobMenu.classList.remove('open');
+    if (headerSearchForm.classList.contains('show-search')) {
+        headerSearchForm.classList.remove('show-search');
+        headerSearchBtn.classList.remove('active');
+    }
 }
 
 const headerPersonal = document.querySelector('.header__personal');

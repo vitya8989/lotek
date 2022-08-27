@@ -1,0 +1,16 @@
+.lk_documents__items {
+  margin-top: 30px;
+
+  @media ($tablet) {
+    margin-top: 20px;
+  }
+}
+.lk_documents__item {
+  margin-bottom: 10px;
+}
+.lk_documents__pagination {
+  margin-top: 60px;
+  @media ($tablet3) {
+    margin-top: 40px;
+  }
+}

@@ -30,6 +30,28 @@
       }
     }
   }
+
+  &.this--flat {
+    flex-direction: row;
+    min-height: 0;
+    align-items: center;
+    padding: 15px;
+    .document__row {
+      flex-direction: row-reverse;
+      align-items: center;
+      &:last-child {
+        margin-top: 0;
+        margin-left: 20px;
+      }
+    }
+    .document__img {
+      margin-left: 0;
+      margin-right: 18px;
+    }
+    .document__weight {
+      margin-right: 18px;
+    }
+  }
 }
 .document__row {
   display: flex;
@@ -84,6 +106,7 @@
   color: #B6B6B6;
   font-variant-numeric: lining-nums;
   transition: 0.3s;
+  white-space: nowrap;
   @media ($tablet3) {
     font-size: 1.4rem;
     line-height: 1.79;

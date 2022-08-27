@@ -15,6 +15,10 @@ burger.onclick = () => {
 }
 headerCross.onclick = () => {
     mobMenu.classList.remove('open');
+    if (headerSearchForm.classList.contains('show-search')) {
+        headerSearchForm.classList.remove('show-search');
+        headerSearchBtn.classList.remove('active');
+    }
 }
 
 const headerPersonal = document.querySelector('.header__personal');
@@ -841,6 +845,32 @@ if (historyPopup) {
             historyPopupStatusProcessWarm.classList.remove('active');
             historyPopupStatusDoneWarm.classList.remove('active');
         }
+    }
+};
+
+const helpForm = document.querySelector('.help__form');
+
+if (helpForm) {
+    helpForm.onsubmit = (e) => {
+        e.preventDefault();
+        if (validate_form(helpForm)) {
+            alert('Форма отправлена');
+        }
+    }
+};
+
+;
+
+const applicationFormObjectInfoBtn = document.querySelector('.application_form__object_info_btn');
+const applicationFormObjectInfo = document.querySelector('.application_form__object_info');
+const jsApplicationFormBlock = document.querySelector('.js_application_form_block');
+if (applicationFormObjectInfo) {
+    const applicationFormObjectInfoEmpty = applicationFormObjectInfo.cloneNode(true);
+
+    applicationFormObjectInfoBtn.onclick = (e) => {
+        e.preventDefault();
+        let newObjectInfo = applicationFormObjectInfoEmpty.cloneNode(true);
+        jsApplicationFormBlock.insertBefore(newObjectInfo, applicationFormObjectInfoBtn);
     }
 };
 
