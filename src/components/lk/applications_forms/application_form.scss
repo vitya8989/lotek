@@ -140,8 +140,33 @@
 
 .application_form__input_wr {
   margin-bottom: 30px;
+
+  &.this--mw_500 {
+    max-width: 500px;
+  }
   span {
     font-weight: 700;
+  }
+
+
+  .SumoSelect {
+    .CaptionCont {
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .SumoSelect.open {
+
+  }
+
+  .input__input {
+    font-weight: 600;
+
+    &::placeholder {
+      font-weight: 400;
+    }
   }
 }
 .application_form__radio_subtitle {
@@ -181,6 +206,10 @@
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: 15px;
+
+  &.this--mw_500 {
+    max-width: 530px;
+  }
   .application_form__input_wr {
     margin-left: 30px;
     display: flex;
@@ -209,6 +238,9 @@
       @media ($mobile) {
         width: calc(50% - 30px);
       }
+    }
+    &.this--50 {
+      width: calc(50% - 30px);
     }
   }
 }

@@ -34,7 +34,7 @@
 
 @@include('../components/lk/help/help.js');
 
-@@include('../components/lk/applications_client/applications.js');
+@@include('../components/lk/applications_client/application.js');
 
 @@include('../components/lk/applications_forms/applications_forms.js');
 
