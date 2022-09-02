@@ -34,14 +34,25 @@
   }
 }
 .search_result__item_top {
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1.5;
-  color: #4F4F4F;
+  a {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #4F4F4F;
+    transition: 0.3s;
+
+    &:hover {
+      @media ($tabletMax) {
+        color: #D03200;
+      }
+    }
+  }
   @media ($tablet3) {
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 1.56;
+    a {
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.56;
+    }
   }
 }
 .search_result__item_bottom {

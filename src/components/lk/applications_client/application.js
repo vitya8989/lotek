@@ -4,7 +4,7 @@ const accordionsBody = document.querySelectorAll('.application__accordion_body')
 if (accordionsHead) {
     for (let i = 0; i < accordionsBody.length; i++) {
         if (accordionsBody[i].classList.contains('open')) {
-            accordionsBody[i].style.maxHeight = `${accordionsBody[i].scrollHeight}px`;
+            accordionsBody[i].style.maxHeight = `${accordionsBody[i].scrollHeight + 10000}px`;
         }
     }
     for (let i = 0; i < accordionsHead.length; i++) {
@@ -16,7 +16,7 @@ if (accordionsHead) {
             } else {
                 accordionsHead[i].classList.add('active');
                 accordionsHead[i].nextElementSibling.classList.add('open');
-                accordionsHead[i].nextElementSibling.style.maxHeight = `${accordionsHead[i].nextElementSibling.scrollHeight}px`;
+                accordionsHead[i].nextElementSibling.style.maxHeight = `${accordionsHead[i].nextElementSibling.scrollHeight + 10000}px`;
             }
         }
     }

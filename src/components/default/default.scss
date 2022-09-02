@@ -22,11 +22,25 @@
     &:hover {
       @media ($tabletMax) {
         color: #D03200;
+        svg {
+          path {
+            stroke: #D03200;
+          }
+        }
+      }
+    }
+
+    svg {
+      path {
+        transition: 0.3s;
       }
     }
   }
   ul,
   ol {
+    li::marker {
+      font-variant-numeric: lining-nums;
+    }
     list-style-position: inside;
     margin-top: 20px;
     font-size: 1.8rem;

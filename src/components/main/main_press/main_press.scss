@@ -35,9 +35,27 @@
   line-height: 1.5;
   color: #26160C;
   transition: 0.3s;
+
   @media ($tablet3) {
     font-size: 1.4rem;
     line-height: 1.79;
+  }
+
+  &.this--fire {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 23px;
+      height: 30px;
+      top: -3px;
+      right: -38px;
+      background: url('../img/icons/fire.svg') center/ contain no-repeat;
+      @media ($tablet3) {
+        right: -33px;
+        top: -6px;
+      }
+    }
   }
 
   &:hover {
@@ -61,12 +79,7 @@
     }
   }
 }
-.main_press__link_fire {
-  margin-left: 15px;
-  @media ($tablet3) {
-    margin-left: 10px;
-  }
-}
+
 .main_press__news_big {
   margin-left: -30px;
   width: calc(100% - 310px);

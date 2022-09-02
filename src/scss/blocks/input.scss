@@ -219,7 +219,7 @@
     background: #D03200;
     border: 1px solid #D03200;
   }
-  span {
+  &::after {
     opacity: 1;
     visibility: visible;
   }
@@ -235,7 +235,8 @@
   position: relative;
   cursor: pointer;
 
-  span {
+  &::after {
+    content: '';
     position: absolute;
     width: 35px;
     height: 35px;
@@ -247,6 +248,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url('../img/icons/arrow_down_white.svg') center/ 22px 13px no-repeat;
   }
 
   &::before {

@@ -132,12 +132,12 @@
   }
 }
 .application__accordion_body {
-  transition: 0.3s;
+  transition: 0.5s;
   max-height: 0;
   overflow: hidden;
 
   &.open {
-    max-height: 100000px;
+    transition: 2s;
   }
 }
 .application_personal {
@@ -382,18 +382,28 @@
     font-size: 1.4rem;
     line-height: 1.79;
   }
-  svg {
+  &::before {
+    content: '';
+    width: 36px;
+    height: 36px;
+    background: url('../img/icons/file.png') center/ contain no-repeat;
     margin-right: 18px;
+
     @media ($tablet3) {
       margin-right: 10px;
     }
     flex: 0 0 auto;
   }
+
 }
 .application_documents__form_input_result_right {
   margin-left: 20px;
-  svg {
+  &::after {
+    content: '';
+    width: 30px;
+    height: 30px;
     margin-left: 30px;
+    background: url('../img/icons/check.svg') center/ contain no-repeat;
     flex: 0 0 auto;
     @media ($tablet3) {
       margin-left: 15px;

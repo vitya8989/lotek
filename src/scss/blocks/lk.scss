@@ -43,6 +43,7 @@
       opacity: 1;
       visibility: visible;
       transform: translateX(0);
+      z-index: 5;
     }
   }
   @media ($mobileMiddle) {
@@ -69,6 +70,7 @@
   display: flex;
   align-items: center;
   color: #4F4F4F;
+  position: relative;
   @media ($tablet) {
     color: #26160C;
     font-weight: 700;
@@ -79,10 +81,12 @@
     justify-content: center;
   }
 
-  svg {
+  &::before {
+    content: '';
     width: 32px;
     height: 32px;
     margin-right: 5px;
+    background: url('../img/icons/lk.svg') center/ contain no-repeat;
     @media ($tablet) {
       display: none;
     }
@@ -168,6 +172,13 @@
     top: 10px;
     cursor: pointer;
     z-index: 4;
+
+    &::after {
+      content: '';
+      width: 30px;
+      height: 35px;
+      background: url('../img/icons/lk_white.svg') center/contain no-repeat;
+    }
   }
 }
 .lk__menu_cross {
@@ -181,6 +192,7 @@
     height: 50px;
     cursor: pointer;
     transition: 0.3s;
+    z-index: 5;
 
     &::before,
     &::after {

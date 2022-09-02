@@ -46,6 +46,7 @@ const onlyNumber = document.querySelectorAll('.only-number');
 if (maskPhone.length > 0) {
     for (let i = 0; i < maskPhone.length; i++) {
         maskPhone[i].style.color = '#CDCDCD';
+        let defaultValue = maskPhone[i].value;
         maskPhone[i].addEventListener('focus', function () {
             maskPhone[i].style.color = '#26160C';
         });
@@ -53,7 +54,7 @@ if (maskPhone.length > 0) {
             maskPhone[i].style.color = '#26160C';
         });
         maskPhone[i].addEventListener('blur', function () {
-            if (maskPhone[i].value === '+_(___)___-__-__') {
+            if (maskPhone[i].value === defaultValue) {
                 maskPhone[i].style.color = '#CDCDCD';
             }
         });

@@ -118,6 +118,9 @@
     line-height: 1.56;
     margin-top: 5px;
   }
+  a {
+    color: #4F4F4F;
+  }
 }
 .main_map__counts {
   margin-top: 25px;
@@ -130,8 +133,10 @@
 }
 .main_map__count {
   margin-left: 50px;
+  max-width: calc(33.333% - 50px);
   @media ($tablet) {
     margin-left: 20px;
+    max-width: calc(33.333% - 20px);
   }
 }
 .main_map__count_top {
