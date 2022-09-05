@@ -5441,10 +5441,15 @@ h1.lk__title {
       flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .application_form__object_info.this--mw_500 {
   max-width: 530px;
+}
+
+.application_form__object_info.this--mt_30 {
+  margin-top: 30px;
 }
 
 .application_form__object_info .application_form__input_wr {
@@ -5483,6 +5488,41 @@ h1.lk__title {
 
 .application_form__object_info_btn svg {
   margin-left: 20px;
+}
+
+.application_form__object_info_cross {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.application_form__object_info_cross::before,
+.application_form__object_info_cross::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background: #929DB6;
+  top: 23px;
+  left: 12px;
+}
+
+.application_form__object_info_cross::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.application_form__object_info_cross::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .application__top_row {
@@ -9819,8 +9859,16 @@ h1.lk__title {
     width: 100%;
   }
 
+  .application_form__object_info.this--mt_30 {
+    margin-top: 60px;
+  }
+
   .application_form__object_info .application_form__input_wr.this--19 {
     width: calc(50% - 30px);
+  }
+
+  .application_form__object_info_cross {
+    top: -30px;
   }
 
   .application__top_row {

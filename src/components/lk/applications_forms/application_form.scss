@@ -206,9 +206,16 @@
   flex-wrap: wrap;
   margin-left: -30px;
   margin-bottom: 15px;
+  position: relative;
 
   &.this--mw_500 {
     max-width: 530px;
+  }
+  &.this--mt_30 {
+   margin-top: 30px;
+    @media ($mobile) {
+      margin-top: 60px;
+    }
   }
   .application_form__input_wr {
     margin-left: 30px;
@@ -249,5 +256,34 @@
 
   svg {
     margin-left: 20px;
+  }
+}
+.application_form__object_info_cross {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  @media ($mobile) {
+    top:-30px;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #929DB6;
+    top: 23px;
+    left: 12px;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
   }
 }
