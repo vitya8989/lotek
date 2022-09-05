@@ -1660,6 +1660,55 @@ h2.callback__title {
   position: relative;
 }
 
+.header__nav_item_arrow {
+  top: 15px;
+  right: 0;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #929DB6;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.header__nav_item_arrow::before,
+.header__nav_item_arrow::after {
+  position: absolute;
+  content: '';
+  width: 9px;
+  height: 2px;
+  left: 10px;
+  background: #929DB6;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__nav_item_arrow::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 10px;
+}
+
+.header__nav_item_arrow::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 10.5px;
+}
+
+.header__nav_item_arrow.active {
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
 .header__nav_link {
   color: #26160C;
   font-weight: 600;
@@ -6371,6 +6420,10 @@ h1.lk__title {
     visibility: visible;
   }
 
+  .header__nav_item_arrow {
+    display: none;
+  }
+
   .header__nav_link:hover {
     color: #929DB6;
   }
@@ -7482,26 +7535,28 @@ h1.lk__title {
   }
 
   .header__nav {
-    margin-top: 20px;
-    margin-left: 0;
     display: block;
     text-align: center;
     width: 100%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    max-width: 500px;
+    margin: 20px auto;
   }
 
   .header__nav_item {
     margin-left: 0;
     padding: 0;
     position: relative;
+    text-align: center;
+    overflow: hidden;
   }
 
   .header__nav_item::after {
     content: '';
     position: absolute;
-    width: 50px;
+    width: 100%;
     height: 2px;
     background: #E1E1E1;
     bottom: 0;
@@ -7516,9 +7571,9 @@ h1.lk__title {
   }
 
   .header__nav_link {
-    display: block;
-    text-align: center;
-    padding: 20px 0;
+    display: inline-block;
+    padding-top: 20px;
+    margin-bottom: 20px;
   }
 
   .header__nav_arrow {
@@ -7526,7 +7581,35 @@ h1.lk__title {
   }
 
   .header__nav_submenu {
-    display: none;
+    position: static;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    opacity: 1;
+    visibility: visible;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-bottom: 0;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    padding: 0;
+    max-height: 0;
+  }
+
+  .header__nav_submenu.open {
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+  }
+
+  .header__nav_submenu_item:last-child {
+    margin-bottom: 20px;
+  }
+
+  .header__nav_submenu_link {
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
 
   .header__btn_group {

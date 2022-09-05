@@ -125,6 +125,22 @@ forgotForm.onsubmit = (e) => {
         }
     }
 }
+
+const headerNavItemArrow = document.querySelectorAll('.header__nav_item_arrow');
+
+for (let i = 0; i < headerNavItemArrow.length; i++) {
+    headerNavItemArrow[i].onclick = () => {
+        if (headerNavItemArrow[i].nextElementSibling.classList.contains('open')) {
+            headerNavItemArrow[i].classList.remove('active');
+            headerNavItemArrow[i].nextElementSibling.classList.remove('open');
+            headerNavItemArrow[i].nextElementSibling.style.maxHeight = '0';
+        } else {
+            headerNavItemArrow[i].classList.add('active');
+            headerNavItemArrow[i].nextElementSibling.classList.add('open');
+            headerNavItemArrow[i].nextElementSibling.style.maxHeight = `${headerNavItemArrow[i].nextElementSibling.scrollHeight + 10000}px`;
+        }
+    }
+}
 ;
 
 const callbackOpen = document.querySelector('.callback_open');
